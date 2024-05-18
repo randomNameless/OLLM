@@ -1,6 +1,9 @@
 # OLLM
+OLLM is a tool for detecting functional bugs in Android apps.
 source code for OLLM
-#How to set up our scripts on a new PC:
+
+
+##How to set up OLLM on a new PC:
 
 Create Android Emulator Pixel 2, API 28， Android 9.0 ('Pie') x86 on Android Studio
 
