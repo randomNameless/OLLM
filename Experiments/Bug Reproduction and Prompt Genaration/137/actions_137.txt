@@ -1,0 +1,4 @@
+click Search
+input com.amaze.filemanager:id/search_edit_text Download
+enter
+click Download

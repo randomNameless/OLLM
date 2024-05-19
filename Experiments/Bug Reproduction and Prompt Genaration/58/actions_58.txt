@@ -1,0 +1,3 @@
+long_click AnkiDroid
+click Widgets
+drag 1000:2600:1000:1400

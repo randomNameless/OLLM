@@ -1,0 +1,53 @@
+
+Initial structure:
+    Long Clickable Buttons: ['Change site icon']
+    Clickable Buttons: ['NO CONNECTION']
+    Other Buttons or text: ['10:58', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'Airplane mode.', 'Battery 100 percent.', 'my first', 'my first', 'findmyfirst6.wordpress.com', 'SWITCH SITE', 'Stats', 'Activity', 'Plan', 'Free', 'Publish', 'Site Pages', 'Blog Posts', 'Media', 'Comments', 'Look and Feel', 'Themes', 'Configuration', 'People', 'Sharing', 'My Site. View your site and manage it, including stats.', 'My Site. View your site and manage it, including stats.', 'My site', 'Reader. Follow content from other sites.', 'My Site. View your site and manage it, including stats.', 'New post. Write a new post.', 'Me. View your profile and make changes.', 'My Site. View your site and manage it, including stats.', 'Notifications. Manage your notifications.', 'My Site. View your site and manage it, including stats.'].
+
+click Site Pages.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'Search', 'Published', 'Drafts', 'Scheduled', 'Trashed', 'show more', 'create']
+    Other Buttons or text: ['Site Pages', 'PUBLISHED', 'DRAFTS', 'SCHEDULED', 'TRASHED', 'About', '14 hr. ago', '10:58', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'Airplane mode.', 'Battery 100 percent.'].
+
+click 1280:2850.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'More options', 'Show Media Options', 'Heading', 'List', 'Block Quote', 'Bold', 'Italic', 'Expand Toolbar']
+    Clickable Buttons: ['PUBLISH', 'Title', 'Share your story here…']
+    Other Buttons or text: ['10:58', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'Airplane mode.', 'Battery 100 percent.', 'my first'].
+
+input org.wordpress.android:id/title Title of third page.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'More options', 'Show Media Options', 'Heading', 'List', 'Block Quote', 'Bold', 'Italic', 'Expand Toolbar', 'page', 'Page', 'pages', 'Open features menu', 'Voice input', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'Shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'Delete', 'Symbol keyboard', ',', 'Emoji button', 'Space', '.', 'Enter', 'Back', 'Switch input method', 'Home']
+    Clickable Buttons: ['PUBLISH', 'Title of third page', 'Share your story here…']
+    Other Buttons or text: ['10:58', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'Airplane mode.', 'Battery 100 percent.', 'my first'].
+
+input org.wordpress.android:id/aztec My story.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'More options', 'Show Media Options', 'Heading', 'List', 'Block Quote', 'Bold', 'Italic', 'Expand Toolbar', 'story', 'storyline', 'storytime', 'Open features menu', 'Voice input', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'Shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'Delete', 'Symbol keyboard', ',', 'Emoji button', 'Space', '.', 'Enter', 'Back', 'Switch input method', 'Home']
+    Clickable Buttons: ['PUBLISH', 'Title of third page', 'My story']
+    Other Buttons or text: ['10:58', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'Airplane mode.', 'Battery 100 percent.', 'my first'].
+
+click 100:180.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'Search', 'Published', 'Drafts', 'Scheduled', 'Trashed', 'show more', 'create']
+    Other Buttons or text: ['Site Pages', 'PUBLISHED', 'DRAFTS', 'SCHEDULED', 'TRASHED', 'About', '14 hr. ago', '10:58', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'Airplane mode.', 'Battery 100 percent.'].
+
+click DRAFTS.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'Search', 'Published', 'Drafts', 'Scheduled', 'Trashed', 'show more', 'show more', 'show more', 'create']
+    Other Buttons or text: ['Site Pages', 'PUBLISHED', 'DRAFTS', 'SCHEDULED', 'TRASHED', 'Aaa', '11 hr. ago', 'Hey', '11 hr. ago', 'Title of third page', 'Now', 'Local draft', '10:58', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'Airplane mode.', 'Battery 100 percent.'].
+
+click Title of third page.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'More options', 'Show Media Options', 'Heading', 'List', 'Block Quote', 'Bold', 'Italic', 'Expand Toolbar']
+    Clickable Buttons: ['SAVE', 'Title of third page', 'My story']
+    Other Buttons or text: ['10:58', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'Airplane mode.', 'Battery 100 percent.', 'my first'].
+
+click SAVE.
+Output structure:
+
+    Clickable Buttons: ['KEEP EDITING', 'PUBLISH NOW']
+    Other Buttons or text: ['10:58', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'Airplane mode.', 'Battery 100 percent.', 'Ready to Publish?', 'This page will be published immediately.'].
+
+
+Is there any inconsistency, a discrepancy, a logical error, a bug in the output after the given test sequence?

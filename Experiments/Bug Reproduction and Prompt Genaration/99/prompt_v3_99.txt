@@ -1,0 +1,32 @@
+Prompt v3:
+
+Action List:
+click Allow
+click com.ichi2.anki:id/fab_expand_menu_button
+click com.ichi2.anki:id/add_deck_action
+input deck1
+click OK
+click deck1
+click com.ichi2.anki:id/fab_expand_menu_button
+click com.ichi2.anki:id/add_note_action
+input 11
+click com.ichi2.anki:id/action_save
+input 22
+click com.ichi2.anki:id/action_save
+input 33
+click com.ichi2.anki:id/action_save
+input 44
+click com.ichi2.anki:id/action_save
+click Navigate up
+click deck1
+click More options
+click 796:1320
+click 810:480
+input 1
+click OK
+
+Final output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Undo', 'content-desc: Mark note', 'content-desc: More options', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: deck1', 'text: 0 minutes left', 'text: 4', 'text: 0', 'text: 0', 'text: AnkidDroid Flashcard', 'text: 11', 'text: SHOW ANSWER', 'text: 6:33', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.']
+
+Above is an app flow, containing the actions from the first page to reach other pages and the last page text. Ignore battery, time and signal fluctuates in page content and coordinate in actions, and do not evaluate them in the following question. Is there any inconsistency, a discrepancy, a logical error, or a bug in the output after the given test sequence? Provide your answer with yes or no, and the reason. The reason should be brief and concise.

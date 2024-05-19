@@ -1,0 +1,44 @@
+click OK
+click Allow
+click com.ichi2.anki:id/fab_expand_menu_button
+click com.ichi2.anki:id/add_deck_action
+input deck1::1
+click OK
+click com.ichi2.anki:id/fab_expand_menu_button
+click com.ichi2.anki:id/add_deck_action
+input deck1::2
+click OK
+click 1
+click com.ichi2.anki:id/fab_expand_menu_button
+click com.ichi2.anki:id/add_note_action
+input 11
+click com.ichi2.anki:id/action_save
+click Navigate up
+click 2
+click com.ichi2.anki:id/fab_expand_menu_button
+click com.ichi2.anki:id/add_note_action
+input 22
+click com.ichi2.anki:id/action_save
+click Navigate up
+click deck1
+click More options
+click 796:312
+click More options
+click 796:144
+click com.ichi2.anki:id/note_deck_spinner
+click deck1::2
+input 33
+click com.ichi2.anki:id/action_save
+click More options
+click 796:144
+click com.ichi2.anki:id/note_deck_spinner
+click deck1::2
+input 44
+click com.ichi2.anki:id/action_save
+click Navigate up
+click com.ichi2.anki:id/bottom_area_layout
+click com.ichi2.anki:id/nextTime2
+click com.ichi2.anki:id/bottom_area_layout
+click com.ichi2.anki:id/nextTime2
+click com.ichi2.anki:id/bottom_area_layout
+click com.ichi2.anki:id/nextTime2

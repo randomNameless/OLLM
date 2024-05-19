@@ -1,0 +1,25 @@
+click OK
+click Allow
+click Navigate up
+click Settings
+click Reviewing
+swipe 500:2500:500:400
+swipe 500:2500:500:400
+long_click Black strokes
+back
+click Appearance
+click Day theme
+click Plain
+back
+back
+click com.ichi2.anki:id/fab_expand_menu_button
+click Add
+input 1
+click com.ichi2.anki:id/action_save
+click Navigate up
+click Default
+click More options
+click Enable whiteboard
+swipe 500:400:500:1000
+click More options
+click Save whiteboard

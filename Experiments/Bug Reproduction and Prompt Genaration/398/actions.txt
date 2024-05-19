@@ -1,0 +1,7 @@
+click NEXT
+click NEXT
+click NEXT
+click OK, GOT IT!
+click More options
+click Settings
+click Mozilla

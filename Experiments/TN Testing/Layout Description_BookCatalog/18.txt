@@ -1,4 +1,0 @@
-Page index 18: This Android XML layout appears to be for a multi-functional screen, featuring a navigation bar with standard actions (Back, Overview, Menu, Home) and a main content area titled "Book Catalogue: Administration". The main content area utilizes a TabHost for navigation, offering different sections like Help, Administration Functions, Donate, and About this App. The Help tab, when active, displays instructions, a link to online help pages, and an option to send information to developers.Neighbor Widgets:com.android.systemui:id/back: Used for a "Back" action.
-com.android.systemui:id/menu: A menu action button.
-com.eleybourn.bookcatalogue:id/send_info: A button for sending information, positioned at (183, 855).
-com.eleybourn.bookcatalogue:id/helpinstructions: A button for help instructions, positioned at (546, 336).

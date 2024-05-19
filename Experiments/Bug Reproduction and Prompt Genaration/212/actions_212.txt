@@ -1,0 +1,4 @@
+click Search
+input org.schabi.newpipe:id/toolbar_search_edit_text linus tech tips
+enter
+

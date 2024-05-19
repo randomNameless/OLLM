@@ -1,0 +1,74 @@
+
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Voice search', 'content-desc: Google Lens']
+    Clickable Buttons: ['text: Amaze', 'text: Calendar', 'text: Camera', 'text: Chrome', 'text: Clock', 'text: Contacts', 'text: Drive', 'text: Files', 'text: Gmail', 'text: Google', 'text: Maps', 'text: Messages', 'text: Phone', 'text: Photos', 'text: Play Store', 'text: Settings', 'text: Simplenote', 'text: TMoble', 'text: YouTube', 'text: YT Music', 'text: Search apps, web and more']
+    Other Buttons: ['text: 7:10', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+long_click Simplenote.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Pause app', 'content-desc: App info']
+    Clickable Buttons: ['text: New Note']
+    Other Buttons: ['text: Widgets', 'text: 7:10', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+click Widgets.
+Output structure:
+
+    Other Buttons: ['text: Simplenote', 'text: Note (Dark)', 'text: 1 × 1', 'text: Note (Light)', 'text: 1 × 1', 'text: Note List (Dark)', 'text: 1 × 1', 'text: Note List (Light)', 'text: 1 × 1', 'text: 7:11', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+drag 700:2700:500:800.
+Output structure:
+
+    Other Buttons: ['text: 7:11', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+swipe 900:2500:900:800.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Voice search', 'content-desc: Google Lens']
+    Clickable Buttons: ['text: Amaze', 'text: Calendar', 'text: Camera', 'text: Chrome', 'text: Clock', 'text: Contacts', 'text: Drive', 'text: Files', 'text: Gmail', 'text: Google', 'text: Maps', 'text: Messages', 'text: Phone', 'text: Photos', 'text: Play Store', 'text: Settings', 'text: Simplenote', 'text: TMoble', 'text: YouTube', 'text: YT Music', 'text: Search apps, web and more']
+    Other Buttons: ['text: 7:11', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click Simplenote.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Open drawer', 'content-desc: Search Notes or Tags']
+    Other Buttons: ['text: All Notes', 'text: \xa0 simplest', 'text: \xa0 simplest \xa0 simplest \xa0 simplest \xa0 simplest \xa0 simplest \xa0 simplest \xa0 simplest \xa0', 'text: Welcome to Simplenote Android!', 'text: Open this for instructions. To create a new note, tap the blue Add Note button. To search your notes, tap the search button in the Action Bar and enter any text. Simplenote will show you matching results instantly. Got a really important note? Press the pin button', 'image-button-resource-idcom.automattic.simplenote:id/fab_button', 'text: 7:11', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click Open drawer.
+Output structure:
+    Long Clickable Buttons: ['text: All Notes', 'text: Trash']
+    Other Buttons: ['text: Settings', 'text: 7:11', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click Settings.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'text: OFF', 'text: OFF', 'text: ON']
+    Other Buttons: ['text: Settings', 'text: Notes', 'text: Condensed note list', 'text: Sort order', 'text: Newest modified date', 'text: Tags', 'text: Sort alphabetically', 'text: Appearance', 'text: Theme', 'text: Light', 'text: Editor', 'text: Font size', 'text: Normal', 'text: Detect links', 'text: Passcode Lock', 'text: Turn passcode lock on', 'text: Screenshots are disabled while passcode lock is on', 'text: Change passcode', 'text: Account', 'text: 7:12', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+scroll_to Log out.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'text: ON', 'text: ON']
+    Other Buttons: ['text: Settings', 'text: Normal', 'text: Detect links', 'text: Passcode Lock', 'text: Turn passcode lock on', 'text: Screenshots are disabled while passcode lock is on', 'text: Change passcode', 'text: Account', 'text: Log out', 'text: tamerlanabdullayev3@gmail.com', 'text: Privacy', 'text: Share analytics', 'text: Help us improve Simplenote by sharing usage data with our analytics tool. Learn more', 'text: More Information', 'text: More Information', 'text: About Simplenote', 'text: Visit simplenote.com', 'text: Version', 'text: 2.5-rc-1', 'text: 7:12', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click Log out.
+Output structure:
+
+    Clickable Buttons: ['text: DELETE NOTES', 'text: CANCEL', 'text: VISIT WEB APP']
+    Other Buttons: ['text: Unsynced notes detected', 'text: Logging out will delete any unsynced notes. You can verify your synced notes by logging in to app.simplenote.com in a web browser.', 'text: 7:12', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click DELETE NOTES.
+Output structure:
+
+    Clickable Buttons: ['text: SIGN UP', 'text: LOG IN']
+    Other Buttons: ['content-desc: Simplenote', 'text: Simplenote', 'text: The simplest way to keep notes.', 'text: 7:13', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+home.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Search', 'content-desc: Voice search', 'content-desc: Google Lens']
+    Clickable Buttons: ['text: Thu, Feb 8', 'text: Play Store', 'text: Gmail', 'text: Photos', 'text: YouTube', 'text: Phone', 'text: Messages', 'text: Chrome']
+    Other Buttons: ['content-desc: Note List (Light)', 'text: Log in to use widget', 'content-desc: Home', 'text: 7:13', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click  Log in to use widget.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Toggle Checklist', 'content-desc: Information', 'content-desc: More Options']
+    Clickable Buttons: ['text: Add tag…']
+    Other Buttons: ['text: 7:13', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+
+

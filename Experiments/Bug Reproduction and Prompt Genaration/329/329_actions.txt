@@ -1,0 +1,8 @@
+click Site Pages
+click org.wordpress.android:id/newPageButton
+input org.wordpress.android:id/title Title of third page
+input org.wordpress.android:id/aztec My story
+click Navigate up
+click DRAFTS
+click Title of third page
+click SAVE

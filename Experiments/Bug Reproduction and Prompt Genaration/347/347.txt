@@ -1,0 +1,42 @@
+
+Initial structure:
+    Long Clickable Buttons: ['Change site icon']
+    Other Buttons or text: ['my first', 'my first', 'findmyfirst6.wordpress.com', 'SWITCH SITE', 'Stats', 'Activity', 'Plan', 'Free', 'Publish', 'Site Pages', 'Blog Posts', 'Media', 'Comments', 'Look and Feel', 'Themes', 'Configuration', 'People', 'Sharing', 'My Site. View your site and manage it, including stats.', 'My Site. View your site and manage it, including stats.', 'My site', 'Reader. Follow content from other sites.', 'My Site. View your site and manage it, including stats.', 'New post. Write a new post.', 'Me. View your profile and make changes.', 'My Site. View your site and manage it, including stats.', 'Notifications. Manage your notifications.', 'My Site. View your site and manage it, including stats.', '10:53', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'Wifi signal full.', 'Airplane mode.', 'Battery 100 percent.'].
+
+click 720:2900.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'More options', 'Show Media Options', 'Heading', 'List', 'Block Quote', 'Bold', 'Italic', 'Expand Toolbar']
+    Clickable Buttons: ['PUBLISH', 'Title', 'Share your story here…']
+    Other Buttons or text: ['my first', '10:53', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'Wifi signal full.', 'Airplane mode.', 'Battery 100 percent.'].
+
+click 100:2900.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'More options', 'Hide Media Options', 'Pick a media from gallery', 'Take Photo or Video with camera', 'Pick a media from WordPress media library', 'Play video', 'Play video']
+    Clickable Buttons: ['PUBLISH', 'Title', 'Share your story here…']
+    Other Buttons or text: ['my first', '10:53', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'Wifi signal full.', 'Airplane mode.', 'Battery 100 percent.'].
+
+click 200:1700.
+Output structure:
+    Long Clickable Buttons: ['Done', 'Confirm', 'Hide Media Options', 'Pick a media from gallery', 'Take Photo or Video with camera', 'Pick a media from WordPress media library', 'Play video', 'Play video']
+    Clickable Buttons: ['Title', 'Share your story here…']
+    Other Buttons or text: ['1 selected', '1', '10:53', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'Wifi signal full.', 'Airplane mode.', 'Battery 100 percent.'].
+
+click 1350:180.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'More options', 'Show Media Options', 'Heading', 'List', 'Block Quote', 'Bold', 'Italic', 'Expand Toolbar']
+    Clickable Buttons: ['PUBLISH', 'Title', '￼']
+    Other Buttons or text: ['my first', '10:53', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'WordPress notification: Uploading media…', 'Wifi signal full.', 'Airplane mode.', 'Battery 100 percent.'].
+
+click 1370:170.
+Output structure:
+
+    Other Buttons or text: ['Undo', 'Redo', 'Save as Draft', 'Preview', 'HTML Mode', 'Post settings', 'Discard Local Changes', '10:53', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'Wifi signal full.', 'Airplane mode.', 'Battery 100 percent.'].
+
+click Preview.
+Output structure:
+    Long Clickable Buttons: ['Navigate up']
+    Clickable Buttons: ['PUBLISH']
+    Other Buttons or text: ['Preview post', '<img class="wp-image-28 alignnone size-full" src="https://findmyfirst6.files.wordpress.com/2024/01/screenshot_20240105-104952-1.png" width="1152" height="2496" />\n', '10:53', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'Wifi signal full.', 'Airplane mode.', 'Battery 100 percent.'].
+
+
+Is there any inconsistency, a discrepancy, a logical error, a bug in the output after the given test sequence?

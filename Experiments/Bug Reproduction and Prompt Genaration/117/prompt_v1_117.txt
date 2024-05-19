@@ -1,0 +1,29 @@
+Promptv1:
+
+
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: More options', 'content-desc: Add']
+    Other Buttons: ['text: 1:28', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.', 'text: AnkiDroid', 'text: 1 card due (0 s)', 'text: Default', 'text: 1', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today'].
+
+long_click Default.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: Default', 'text: Rename deck', 'text: Create subdeck', 'text: Options', 'text: Custom study', 'text: Delete deck', 'text: Export deck', 'text: 1:28', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+click Export deck.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: CANCEL', 'text: OK']
+    Other Buttons: ['text: Export', 'text: Export “Default” as apkg file?', 'text: Include scheduling', 'text: Include media', 'text: 1:29', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+click 182:1571.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: CANCEL', 'text: OK']
+    Other Buttons: ['text: Export', 'text: Export “Default” as apkg file?', 'text: Include scheduling', 'text: Include media', 'text: 1:29', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click OK.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: Exporting Anki package file…', 'text: 1:29', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+

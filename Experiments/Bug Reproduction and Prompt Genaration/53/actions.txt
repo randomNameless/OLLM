@@ -1,0 +1,22 @@
+click OK
+click Allow
+click com.ichi2.anki:id/fab_expand_menu_button
+click com.ichi2.anki:id/add_deck_action
+input deck1
+click OK
+click deck1
+click com.ichi2.anki:id/fab_expand_menu_button
+click com.ichi2.anki:id/add_note_action
+input 1
+click com.ichi2.anki:id/action_save
+input 2
+click com.ichi2.anki:id/action_save
+back
+click Navigate up
+click 0:84
+click Card browser
+long_click 2
+click More options
+click Reposition
+input 1
+click OK

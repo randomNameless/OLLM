@@ -1,0 +1,22 @@
+
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Search', 'content-desc: Voice search', 'content-desc: Google Lens']
+    Clickable Buttons: ['text: Amaze', 'text: AnkiDroid', 'text: Calendar', 'text: Camera', 'text: Chrome', 'text: Clock', 'text: Contacts', 'text: Drive', 'text: Files', 'text: Gmail', 'text: Google', 'text: Maps', 'text: Messages', 'text: NewPipe', 'text: Phone', 'text: Photos', 'text: Play Store', 'text: Settings', 'text: Simplenote', 'text: TMoble', 'text: WordPress', 'text: YouTube', 'text: YT Music', 'text: Search apps, web and more']
+    Other Buttons: ['content-desc: Home'].
+
+long_click AnkiDroid.
+Output structure:
+
+    Other Buttons: ['text: Pause app', 'text: App info', 'text: Widgets'].
+
+click Widgets.
+Output structure:
+
+    Other Buttons: ['text: AnkiDroid', 'text: Add note', 'text: 1 × 1', 'text: AnkiDroid small', 'text: 1 × 1'].
+
+drag 1000:2600:1000:1400.
+Output structure:
+.
+
+
+

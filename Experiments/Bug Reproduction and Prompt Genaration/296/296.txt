@@ -1,0 +1,19 @@
+
+Initial structure:
+    Long Clickable Buttons: ['Change site icon', 'Switch Site', 'Create a post, page or story']
+    Clickable Buttons: ['my first', 'findmyfirst6.wordpress.com']
+    Other Buttons or text: ['11:00', 'Android Setup notification: sdk_gphone_x86 setup in progress', 'Wifi signal full.', 'Phone three bars.', 'Battery 100 percent.', 'My Site', 'Stats', 'Pages', 'Posts', 'Media', 'Plan', 'Free', 'Stats', 'Activity', 'Publish', 'Site Pages', 'Blog Posts', 'Media', 'Comments', 'Look and Feel', 'Themes', 'My Site. View your site and manage it, including stats.', 'My Site. View your site and manage it, including stats.', 'My Site', 'Reader. Follow content from other sites.', 'My Site. View your site and manage it, including stats.', 'Reader', 'Notifications. Manage your notifications.', 'My Site. View your site and manage it, including stats.', 'Notifications'].
+
+click Stats.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'Days', 'Weeks', 'Months', 'Years', 'Stats item settings', 'Stats item settings']
+    Clickable Buttons: ['DISMISS', 'TRY IT NOW']
+    Other Buttons or text: ['11:00', 'Android Setup notification: sdk_gphone_x86 setup in progress', 'Wifi signal full.', 'Phone three bars.', 'Battery 100 percent.', 'Stats', 'Insights', 'INSIGHTS', 'DAYS', 'WEEKS', 'MONTHS', 'YEARS', 'Manage Your Stats', 'New', 'Manage Your Stats', 'Choose what stats to see, and focus on the data you care most about. Tap Add new stats card at the bottom of Insights to customise your stats.', 'Latest Post Summary', "It's been 3 minutes since (Untitled) was published. Get the ball rolling and increase your post views by sharing your post:", 'Share post', 'Today', 'Views', '1', 'Visitors', '1', 'Likes', '0', 'Comments', '0'].
+
+click DAYS.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'Insights', 'Weeks', 'Months', 'Years', 'Select previous period', 'Select next period', 'Views: 1', 'Visitors: 1', 'Likes: 0', 'Comments: 0', 'Title: Home page / Archives, Views: 1']
+    Other Buttons or text: ['11:00', 'Android Setup notification: sdk_gphone_x86 setup in progress', 'Wifi signal full.', 'Phone three bars.', 'Battery 100 percent.', 'Stats', 'INSIGHTS', 'Days', 'DAYS', 'WEEKS', 'MONTHS', 'YEARS', 'Jan 5, 2024', 'Site timezone (UTC)', '1 Views for period: Jan 5, 2024, change from previous period - +1 (∞%)', '1', 'Views', '+1 (∞%)', 'Jan 5, 2024, 1 Views\xa0 & 1 Visitors', 'VIEWS', '1', 'VISITORS', '1', 'LIKES', '0', 'COMMENTS', '0', 'Posts and Pages', 'Home page / Archives', 'Referrers', 'No data for this period', 'Clicks'].
+
+
+Is there any inconsistency, a discrepancy, a logical error, a bug in the output after the given test sequence?

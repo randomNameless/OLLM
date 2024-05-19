@@ -1,0 +1,6 @@
+Before running action code, 
+make sure to wipe all user data,
+Open camera, take a picture,
+install the app,
+open the app
+then run the action code
