@@ -1,6 +1,0 @@
-click New post. Write a new post.
-click Show Media Options
-click org.wordpress.android:id/image_thumbnail
-click Confirm
-click More options
-click Preview
