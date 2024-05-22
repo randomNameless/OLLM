@@ -41,5 +41,11 @@ The action text can either be defined by the human tester or by an automatic seq
 * The output path of the tool is in ``/*bugid/``.
 * Open the folder and you'll see the .xml file and screenshot of each step of the app after execution.
 * The text sequence containing text extracted from UI and the actions will be stored in a file named ``prompt_v1_*bugid.txt``.
-* Use the pre-prompt in the prompt folder (./prompt/) and the text sequence for LLMs the format should be pre prompt, LLM Response, text sequence, LLM decision.
+* Use the pre-prompt in the prompt folder (./prompt/) and the text sequence for LLMs the format should be pre-prompt, LLM Response, text sequence, LLM decision.
+
+## Description Experiment Files:
+* For each research question, there is a folder containing the experiment data as evidence of the conclusion. For example, (./Experiments/RQ1 Effectiveness and Efficiency of detecting NCF bugs)
+* Each research question contains an Excel form that records the bug id, the bug name, the result of the experiment, and the URL of the LLM response.
+* There's a test sequence folder containing all of the test sequences we generated for the bugs.
+* For each experiment, there's a folder containing the prompts (for example, ./Experiments/RQ1 Effectiveness and Efficiency of detecting NCF bugs/Prompt of TP/Prompts) and a folder containing the LLM responses(./Experiments/RQ1 Effectiveness and Efficiency of detecting NCF bugs/Prompt of TP/LLM response).
 
