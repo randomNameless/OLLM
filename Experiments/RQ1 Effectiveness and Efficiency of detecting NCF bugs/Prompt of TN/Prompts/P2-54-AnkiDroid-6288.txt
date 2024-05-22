@@ -1,0 +1,50 @@
+You will read an Android app sequence, containing actions to reach each page and the text on each page. Then I will send you a screenshot of the last page. Your task is to determine whether there is a UI error in the screenshot, if there is anything that does not correspond to the text on the page, or if there is a potential discrepancy. 
+If you detect error messages, please also check the consistency or correctness of these elements about the provided sequence.
+If you observe redundant or duplicate elements, it counts as a UI error.
+If you observe part of the text, or sentences that are cut off, it means complete statements are truncated. It counts as a UI error.
+Ignore system time and status bar Information and do not analyze. You should focus only on the information for the app itself.
+If the screen is rotated, analyze the text accordingly.
+If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision. Your answer should also be brief and concise.
+Initial structure:
+    Long Clickable Buttons: ['Back', 'Overview', 'Home', 'Navigate up', 'Synchronization', 'More options', 'Add']
+    Other Buttons: ['2:23', 'Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.', 'AnkiDroid', '0 cards due (0 s)', '*Hello (zanki)', '0', '0', '0', 'Studied 0 cards in 0 minutes today'].
+
+click *Hello (zanki).
+Output structure:
+    Long Clickable Buttons: ['Back', 'Overview', 'Home', 'Navigate up', 'Synchronization', 'More options', 'Add']
+    Clickable Buttons: ['HELP']
+    Other Buttons: ['2:24', 'Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.', 'AnkiDroid', '0 cards due (0 s)', '*Hello (zanki)', '0', '0', '0', 'Studied 0 cards in 0 minutes today', 'This deck is empty'].
+
+click com.ichi2.anki:id/fab_expand_menu_button.
+Output structure:
+    Long Clickable Buttons: ['Back', 'Overview', 'Home', 'Navigate up', 'Synchronization', 'More options', 'Create deck', 'Get shared decks', 'Add', 'Add']
+    Other Buttons: ['2:24', 'Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.', 'AnkiDroid', '0 cards due (0 s)', '*Hello (zanki)', '0', '0', '0', 'Studied 0 cards in 0 minutes today', 'Create deck', 'Get shared decks', 'Add'].
+
+click Add.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'Save', 'Front', 'Attach multimedia content to the Front field', 'Back', 'Attach multimedia content to the Back field', 'Back', 'Overview', 'Home']
+    Clickable Buttons: ['Cards: Card 1']
+    Other Buttons: ['Add note', 'Type:', 'Basic', 'Deck:', '*Hello (zanki)', 'Front', 'Back', 'Tags: ', '2:24', 'Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.'].
+
+input Hello.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'Save', 'Attach multimedia content to the Front field', 'Back', 'Attach multimedia content to the Back field', 'Hello', 'Hellos', 'emoji 👋', 'emoji 🤗', 'Open features menu', 'Voice input', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'Shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'Delete', 'Symbol keyboard', ',', 'Emoji button', 'Space', '.', 'Enter', 'Back', 'Overview', 'Switch input method', 'Home']
+    Clickable Buttons: ['Hello', 'Cards: Card 1']
+    Other Buttons: ['Add note', 'Type:', 'Basic', 'Deck:', '*Hello (zanki)', 'Front', 'Back', 'Tags: ', '2:24', 'Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.'].
+
+click com.ichi2.anki:id/action_save.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'Save', 'Front', 'Attach multimedia content to the Front field', 'Back', 'Attach multimedia content to the Back field', 'Back', 'Overview', 'Home']
+    Clickable Buttons: ['Cards: Card 1']
+    Other Buttons: ['Add note', 'Type:', 'Basic', 'Deck:', '*Hello (zanki)', 'Front', 'Back', 'Tags: ', '2:24', 'Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.'].
+
+back.
+Output structure:
+    Long Clickable Buttons: ['Back', 'Overview', 'Home', 'Navigate up', 'Synchronization', 'More options', 'Add']
+    Other Buttons: ['2:24', 'Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.', 'AnkiDroid', '1 card due (0 s)', '*Hello (zanki)', '1', '0', '0', 'Studied 0 cards in 0 minutes today'].
+
+click Navigate up.
+Output structure:
+    Long Clickable Buttons: ['Back', 'Overview', 'Home', 'Decks', 'Card browser', 'Statistics']
+    Clickable Buttons: ['OFF']
+    Other Buttons: ['2:24', 'Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.', 'Night mode', 'Settings', 'Help', 'Send feedback'].

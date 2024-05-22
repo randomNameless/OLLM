@@ -1,0 +1,29 @@
+You will read an Android app sequence, containing actions to reach each page and the text on each page. Then I will send you a screenshot of the last page. Your task is to determine whether there is a UI error in the screenshot, if there is anything that does not correspond to the text on the page, or if there is a potential discrepancy. 
+If you detect error messages, please also check the consistency or correctness of these elements about the provided sequence.
+If you observe redundant or duplicate elements, it counts as a UI error.
+If you observe part of the text, or sentences that are cut off, it means complete statements are truncated. It counts as a UI error.
+Ignore system time and status bar Information and do not analyze. You should focus only on the information for the app itself.
+If the screen is rotated, analyze the text accordingly.
+If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision. Your answer should also be brief and concise.
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Open Drawer', 'content-desc: Search', 'content-desc: Subscriptions', 'content-desc: Bookmarked Playlists']
+    Clickable Buttons: ['text: REPORT', 'text: RETRY']
+    Other Buttons: ['text: Trending', 'content-desc: Trending', 'text: Sorry, something went wrong.'].
+
+click Search.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Clear', 'content-desc: More options']
+    Clickable Buttons: ['text: Search']
+    Other Buttons: ['content-desc: Search'].
+
+input org.schabi.newpipe:id/toolbar_search_edit_text linus tech tips.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Clear', 'content-desc: More options']
+    Clickable Buttons: ['text: linus tech tips']
+    Other Buttons: ['content-desc: Search', 'text: linus tech tips', 'text: linus tech tips drama', 'text: linus tech tips hard r', 'text: linus tech tips building a pc', 'text: linus tech tips controversy', 'text: linus tech tips apology', 'text: linus tech tips laptop', 'text: linus tech tips secret shopper', 'text: linus tech tips hacked', 'text: linus tech tips steam deck', 'text: linus tech tips madison', 'text: linus tech tips intel upgrade'].
+
+enter.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Clear', 'content-desc: More options']
+    Clickable Buttons: ['text: linus tech tips']
+    Other Buttons: ['content-desc: Search', 'content-desc: Video preview thumbnail', 'text: Linus Tech Tips', 'text: Linus Tech Tips is a passionate team of "professionally curious" experts in consumer technology and video production who aim to\xa0...', 'text: 155 videos', 'content-desc: Video preview thumbnail', 'text: NVIDIA is Worth More Than Canada - WAN Show February 23, 2024', 'text: Linus Tech Tips', 'text: 2:45:18', 'text: 517K views • 5 days ago', 'content-desc: Video preview thumbnail', 'text: It CAN be done - The Potato PC', 'text: Linus Tech Tips', 'text: 21:07', 'text: 1.2M views • 3 days ago', 'content-desc: Video preview thumbnail', 'text: Notice Anything Weird?', 'text: Linus Tech Tips', 'text: 16:52', 'text: 1.3M views • 4 days ago', 'content-desc: Video preview thumbnail', 'text: The $10,000 Mac Pro Killer', 'text: Linus Tech Tips', 'text: 21:19', 'text: 1.5M views • 1 week ago', 'content-desc: Video preview thumbnail', 'text: This TINY TV Costs $20,000 - Flanders Scientific XMP550', 'text: Linus Tech Tips', 'text: 22:09', 'text: 1.4M views • 6 days ago', 'content-desc: Video preview thumbnail', 'text: The ALL LOGITECH Gaming Setup', 'text: Linus Tech Tips', 'text: 21:31', 'text: 1.4M views • 1 week ago', 'content-desc: Video preview thumbnail', 'text: This Review is Going to Make Me Very Unpopular', 'text: Linus Tech Tips', 'text: 12:46', 'text: 1.2M views • 1 week ago', 'content-desc: Video preview thumbnail', 'text: I’m Afraid to Mess Up His Upgrade… Electroboom Tech Makeover'].

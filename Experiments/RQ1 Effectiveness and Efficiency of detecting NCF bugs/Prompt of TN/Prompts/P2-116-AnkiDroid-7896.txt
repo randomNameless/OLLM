@@ -1,0 +1,39 @@
+You will read an Android app sequence, containing actions to reach each page and the text on each page. Then I will send you a screenshot of the last page. Your task is to determine whether there is a UI error in the screenshot, if there is anything that does not correspond to the text on the page, or if there is a potential discrepancy. 
+If you detect error messages, please also check the consistency or correctness of these elements about the provided sequence.
+If you observe redundant or duplicate elements, it counts as a UI error.
+If you observe part of the text, or sentences that are cut off, it means complete statements are truncated. It counts as a UI error.
+Ignore system time and status bar Information and do not analyze. You should focus only on the information for the app itself.
+If the screen is rotated, analyze the text accordingly.
+If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision. Your answer should also be brief and concise.
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Change site icon']
+    Other Buttons: ['text: my first', 'text: my first', 'text: findmyfirst6.wordpress.com', 'text: SWITCH SITE', 'text: Stats', 'text: Activity', 'text: Plan', 'text: Free', 'text: Publish', 'text: Site Pages', 'text: Blog Posts', 'text: Media', 'text: Comments', 'text: Look and Feel', 'text: Themes', 'text: Configuration', 'text: People', 'text: Sharing', 'content-desc: My Site. View your site and manage it, including stats.', 'content-desc: My Site. View your site and manage it, including stats.', 'text: My site', 'content-desc: Reader. Follow content from other sites.', 'content-desc: My Site. View your site and manage it, including stats.', 'content-desc: New post. Write a new post.', 'content-desc: Me. View your profile and make changes.', 'content-desc: My Site. View your site and manage it, including stats.', 'content-desc: Notifications. Manage your notifications.', 'content-desc: My Site. View your site and manage it, including stats.', 'text: 10:53', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone_x86', 'content-desc: Wifi signal full.', 'content-desc: Airplane mode.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/fab_expand_menu_button.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: More options', 'content-desc: Show Media Options', 'content-desc: Heading', 'content-desc: List', 'content-desc: Block Quote', 'content-desc: Bold', 'content-desc: Italic', 'content-desc: Expand Toolbar']
+    Clickable Buttons: ['text: PUBLISH', 'text: Title', 'text: Share your story here…']
+    Other Buttons: ['text: my first', 'text: 10:53', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone_x86', 'content-desc: Wifi signal full.', 'content-desc: Airplane mode.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/add_note_action.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: More options', 'content-desc: Hide Media Options', 'content-desc: Pick a media from gallery', 'content-desc: Take Photo or Video with camera', 'content-desc: Pick a media from WordPress media library', 'content-desc: Play video', 'content-desc: Play video']
+    Clickable Buttons: ['text: PUBLISH', 'text: Title', 'text: Share your story here…']
+    Other Buttons: ['text: my first', 'text: 10:53', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone_x86', 'content-desc: Wifi signal full.', 'content-desc: Airplane mode.', 'content-desc: Battery 100 percent.'].
+
+input com.ichi2.anki:id/id_note_editText test.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Done', 'content-desc: Confirm', 'content-desc: Hide Media Options', 'content-desc: Pick a media from gallery', 'content-desc: Take Photo or Video with camera', 'content-desc: Pick a media from WordPress media library', 'content-desc: Play video', 'content-desc: Play video']
+    Clickable Buttons: ['text: Title', 'text: Share your story here…']
+    Other Buttons: ['text: 1 selected', 'text: 1', 'text: 10:53', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone_x86', 'content-desc: Wifi signal full.', 'content-desc: Airplane mode.', 'content-desc: Battery 100 percent.'].
+
+input com.ichi2.anki:id/id_note_editText αὐτός.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: More options', 'content-desc: Show Media Options', 'content-desc: Heading', 'content-desc: List', 'content-desc: Block Quote', 'content-desc: Bold', 'content-desc: Italic', 'content-desc: Expand Toolbar']
+    Clickable Buttons: ['text: PUBLISH', 'text: Title', 'text:  ']
+    Other Buttons: ['text: my first', 'text: 10:53', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone_x86', 'content-desc: WordPress notification: Uploading media…', 'content-desc: Wifi signal full.', 'content-desc: Airplane mode.', 'content-desc: Battery 100 percent.'].
+
+click Save.
+Output structure:
+
+    Other Buttons: ['text: Undo', 'text: Redo', 'text: Save as Draft', 'text: Preview', 'text: HTML Mode', 'text: Post settings', 'text: Discard Local Changes', 'text: 10:53', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone_x86', 'content-desc: Wifi signal full.', 'content-desc: Airplane mode.', 'content-desc: Battery 100 percent.'].

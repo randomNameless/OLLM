@@ -1,0 +1,27 @@
+You will read an Android app sequence, containing actions to reach each page and the text on each page. Then I will send you a screenshot of the last page. Your task is to determine whether there is a UI error in the screenshot, if there is anything that does not correspond to the text on the page, or if there is a potential discrepancy. 
+If you detect error messages, please also check the consistency or correctness of these elements about the provided sequence.
+If you observe redundant or duplicate elements, it counts as a UI error.
+If you observe part of the text, or sentences that are cut off, it means complete statements are truncated. It counts as a UI error.
+Ignore system time and status bar Information and do not analyze. You should focus only on the information for the app itself.
+If the screen is rotated, analyze the text accordingly.
+If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision. Your answer should also be brief and concise.
+back.
+Output structure:
+    Long Clickable Buttons: ['Open menu', 'Search', 'Sort', 'Filter', 'Refresh', 'More options', 'Show information', 'Show podcast settings', 'Download', 'Pause', 'Download', 'Download', 'Download', 'Download', 'Pause', 'Add to Favorites', 'Set sleep timer', 'Audio controls', 'More options', 'Switch pages']
+    Other Buttons: ['9:52', 'Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.', 'New Heights with Jason and Travis Kelce', 'Wave Sports + Entertainment', 'Travis Goes Back to the Super Bowl, Jason on New Eagles Coaches & The Legacy of NFL Blitz | Ep 76', 'Episode is in the queue', '·', 'Jan 31', '·', '113 MB', '00:00:40', '01:33:33', 'Travis Wins on the Road, Jason Celebrates Shirtless and Full Divisional Round Recap | Ep 75', 'Episode is in the queue', '·', 'Jan 24', '·', '112 MB', '00:00:03', '01:32:25', 'Travis on Sub-Zero Football, Jason on Eagles Future and Full Wild Card Recap | Ep 74', 'Jan 17', '·', '112 MB', '01:33:03', "Regular Season Finale, Jameis Goes Rogue and Playoffs? We're talkin’ playoffs? | Ep 73", 'Jan 10', '·', '93 MB', '01:17:37', 'Eagles New Year Struggles, Chiefs Swag Surf Comeback & A Mayo Dunking | Ep 72', 'Jan 3', '·', '119 MB', '01:38:49', "The Kelce Family on Mom's Favorite, Dad's Nicknames and Kylie’s Mountain Disaster | Ep 71", 'Dec 29, 2023', '·', '113 MB', '01:33:56', 'Media player', 'Travis Wins on the Road, Jason Celebrates Shirtless and Full Divisional Round Recap | Ep 75', 'New Heights with Jason and Travis Kelce'].
+
+click Open menu.
+Output structure:
+    Long Clickable Buttons: ['Settings']
+    Clickable Buttons: ['2']
+    Other Buttons: ['9:52', 'Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.', 'Queue', 'Episodes', 'Subscriptions', 'Downloads', 'Playback History', 'Add Podcast', 'New Heights with Jason and Travis Kelce', 'Settings'].
+
+click Playback History.
+Output structure:
+    Long Clickable Buttons: ['Open menu', 'Clear History', 'Download', 'Pause', 'Add to Favorites', 'Set sleep timer', 'Audio controls', 'More options', 'Switch pages']
+    Other Buttons: ['9:52', 'Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.', 'Playback History', 'Travis Goes Back to the Super Bowl, Jason on New Eagles Coaches & The Legacy of NFL Blitz | Ep 76', 'Episode is in the queue', '·', 'Jan 31', '·', '113 MB', '00:00:40', '01:33:33', 'Media player', 'Travis Wins on the Road, Jason Celebrates Shirtless and Full Divisional Round Recap | Ep 75', 'New Heights with Jason and Travis Kelce'].
+
+long_click 308:374.
+Output structure:
+
+    Other Buttons: ['Travis Goes Back to the Super Bowl, Jason on New Eagles Coaches & The Legacy of NFL Blitz | Ep 76', 'Mark as played', 'Remove from Queue', 'Add to Favorites', 'Reset Playback Position', 'Visit Website', 'Share', '9:52', 'Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.'].

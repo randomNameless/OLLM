@@ -1,0 +1,48 @@
+You will read an app flow, containing page text and actions to reach other pages. Then I will ask you: Is there any logical error, or a bug in the output after the given test sequence?
+While you read the flow and answer questions, please read the rules below very carefully and consider them when you provide answers. 
+A logic error means the app didn’t provide the expected result after performing actions. While evaluating logic errors, you should also consider the rules below:
+You should not analyze battery, system time and signal fluctuates in page content and coordinate in actions. This means if you see changes in time, signal, or battery, you should not consider them logic errors or inconsistencies. You should not consider them as input. And your answer should be no.
+You should focus only on analyzing the logic flow without making any feedback or expected behavior predictions. 
+You should not analyze duplicated UI elements. 
+You should not analyze the lack of confirmation messages. 
+You should not analyze unchanged output structure. 
+The rules are irrelevant to the logic flow.
+Provide your answer with yes or no. 
+If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision.
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Open Drawer', 'content-desc: Search', 'content-desc: Subscriptions', 'content-desc: Bookmarked Playlists']
+    Clickable Buttons: ['text: REPORT', 'text: RETRY']
+    Other Buttons: ['text: Trending', 'content-desc: Trending', 'text: Sorry, something went wrong.'].
+
+click Open Drawer.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Close Drawer', 'content-desc: Search', 'content-desc: Subscriptions', 'content-desc: Bookmarked Playlists', 'content-desc: Toggle service, currently selected:YouTube']
+    Clickable Buttons: ['text: REPORT', 'text: RETRY']
+    Other Buttons: ['text: Trending', 'content-desc: Trending', 'text: Sorry, something went wrong.', 'text: NewPipe', 'text: YouTube', 'text: Trending', 'text: Subscriptions', "text: What's New", 'text: Bookmarked Playlists', 'text: Downloads', 'text: History', 'text: Settings', 'text: About'].
+
+click Settings.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up']
+    Other Buttons: ['text: Settings', 'text: Video and audio', 'text: Download', 'text: Appearance', 'text: History and cache', 'text: Content', 'text: Notification', 'text: Updates'].
+
+click Content.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'text: OFF', 'text: OFF', 'text: ON', 'text: ON', 'text: ON']
+    Other Buttons: ['text: Content', 'text: App language', 'text: System default', 'text: Default content language', 'text: System default', 'text: Default content country', 'text: System default', 'text: Content of main page', 'text: What tabs are shown on the main page', 'text: PeerTube instances', 'text: Select your favorite PeerTube instances', 'text: Show age restricted content', 'text: Show content possibly unsuitable for children because it has an age limit (like 18+)', 'text: Turn on YouTube\'s "Restricted Mode"', 'text: YouTube provides a "Restricted Mode" which hides potentially mature content', 'text: Search suggestions', 'text: Show suggestions when searching', 'text: Load thumbnails', 'text: Turn off to prevent loading thumbnails, saving data and memory usage. Changes clear both in-memory and on-disk image cache.', 'text: Show comments', 'text: Turn off to hide comments'].
+
+scroll_to Export database.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'text: OFF', 'text: ON', 'text: ON', 'text: ON', 'text: ON', 'text: ON', 'text: ON']
+    Other Buttons: ['text: Content', 'text: Turn on YouTube\'s "Restricted Mode"', 'text: YouTube provides a "Restricted Mode" which hides potentially mature content', 'text: Search suggestions', 'text: Show suggestions when searching', 'text: Load thumbnails', 'text: Turn off to prevent loading thumbnails, saving data and memory usage. Changes clear both in-memory and on-disk image cache.', 'text: Show comments', 'text: Turn off to hide comments', "text: Show 'Next' and 'Similar' videos", 'text: Show description', 'text: Turn off to hide video description and additional information', 'text: Show meta info', 'text: Turn off to hide meta info boxes with additional information about the stream creator, stream content or a search request.', 'text: Import database', 'text: Overrides your current history, subscriptions, playlists and (optionally) settings', 'text: Export database', 'text: Export history, subscriptions, playlists and settings', 'text: Feed'].
+
+click Export database.
+Output structure:
+    Long Clickable Buttons: ['content-desc: New folder']
+    Clickable Buttons: ['text: CANCEL', 'text: OK']
+    Other Buttons: ['text: /storage/emulated/0', 'text: ..', 'text: Alarms', 'text: Android', 'text: AnkiDroid', 'text: Audiobooks', 'text: DCIM', 'text: Documents', 'text: Download', 'text: Movies', 'text: Music', 'text: Notifications', 'text: Pictures'].
+
+click ...
+Output structure:
+    Long Clickable Buttons: ['content-desc: New folder']
+    Clickable Buttons: ['text: CANCEL', 'text: OK']
+    Other Buttons: ['text: /storage/emulated', 'text: ..'].

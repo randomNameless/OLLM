@@ -1,0 +1,303 @@
+You will read an Android app sequence, containing actions to reach each page and the text on each page. Then I will send you a screenshot of the last page. Your task is to determine whether there is a UI error in the screenshot, if there is anything that does not correspond to the text on the page, or if there is a potential discrepancy. 
+If you detect error messages, please also check the consistency or correctness of these elements about the provided sequence.
+If you observe redundant or duplicate elements, it counts as a UI error.
+If you observe part of the text, or sentences that are cut off, it means complete statements are truncated. It counts as a UI error.
+Ignore system time and status bar Information and do not analyze. You should focus only on the information for the app itself.
+If the screen is rotated, analyze the text accordingly.
+If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision. Your answer should also be brief and concise.
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: OK']
+    Other Buttons: ['text: 2:46', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.', 'text: Welcome to AnkiDroid!', 'text: AnkiDroid requires storage permission, which we use exclusively to store your AnkiDroid collection, flashcard media and backups. Our code is open-source, written by volunteers, and trusted by millions.\n\nIf you have any questions, please access our in-app manual or visit our support forums.\n\nThank you for trying AnkiDroid!\n—AnkiDroid Development Team'].
+
+click OK.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: Allow', 'text: Don’t allow']
+    Other Buttons: ['text: Allow AnkiDroid to access photos, media, and files on your device?', 'text: 2:46', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+click Allow.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: More options', 'content-desc: Add', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: AnkiDroid', 'text: 2:47', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/fab_expand_menu_button.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: More options', 'content-desc: Create deck', 'content-desc: Get shared decks', 'content-desc: Add', 'content-desc: Add', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: AnkiDroid', 'text: Collection is empty', 'text: Start adding cards\nusing the + icon.', 'text: Create deck', 'text: Get shared decks', 'text: Add', 'text: 2:47', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/add_deck_action.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: CANCEL', 'text: OK']
+    Other Buttons: ['text: Create deck', 'text: 2:47', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+input deck1.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Open features menu', 'content-desc: Voice input', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Next', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Switch input method', 'content-desc: Home']
+    Clickable Buttons: ['text: deck1', 'text: CANCEL', 'text: OK']
+    Other Buttons: ["text: You will read app flow screenshots of test sequences. Is there any UI error, or a bug in the output after the given test sequence?  UI errors include broken images, missing images, duplicate UI elements, and so on. \r Provide your answer with yes or no. \r If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision.\r ", 'text: Create deck', 'text: 2:47', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click OK.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: More options', 'content-desc: Add', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: AnkiDroid', 'text: 0 cards due (0 s)', 'text: deck1', 'text: 0', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today', 'text: 2:47', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click deck1.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: More options', 'content-desc: Add', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: HELP']
+    Other Buttons: ['text: AnkiDroid', 'text: 0 cards due (0 s)', 'text: deck1', 'text: 0', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today', 'text: This deck is empty', 'text: 2:48', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/fab_expand_menu_button.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: More options', 'content-desc: Create deck', 'content-desc: Get shared decks', 'content-desc: Add', 'content-desc: Add', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: AnkiDroid', 'text: 0 cards due (0 s)', 'text: deck1', 'text: 0', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today', 'text: Create deck', 'text: Get shared decks', 'text: Add', 'text: 2:48', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/add_note_action.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Open features menu', 'content-desc: Voice input', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Enter', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Switch input method', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Front', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field']
+    Clickable Buttons: ['text: Cards: Card 1']
+    Other Buttons: ["text: You will read app flow screenshots of test sequences. Is there any UI error, or a bug in the output after the given test sequence?  UI errors include broken images, missing images, duplicate UI elements, and so on. \r Provide your answer with yes or no. \r If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision.\r ", 'text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck1', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:48', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+input 1.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Open features menu', 'content-desc: Voice input', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Enter', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Switch input method', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field']
+    Clickable Buttons: ['text: 1', 'text: Cards: Card 1']
+    Other Buttons: ["text: You will read app flow screenshots of test sequences. Is there any UI error, or a bug in the output after the given test sequence?  UI errors include broken images, missing images, duplicate UI elements, and so on. \r Provide your answer with yes or no. \r If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision.\r ", 'text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck1', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:48', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/action_save.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Front', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field']
+    Clickable Buttons: ['text: Cards: Card 1']
+    Other Buttons: ['text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck1', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:48', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+input 2.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Open features menu', 'content-desc: Voice input', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Enter', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Switch input method', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field']
+    Clickable Buttons: ['text: 2', 'text: Cards: Card 1']
+    Other Buttons: ["text: You will read app flow screenshots of test sequences. Is there any UI error, or a bug in the output after the given test sequence?  UI errors include broken images, missing images, duplicate UI elements, and so on. \r Provide your answer with yes or no. \r If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision.\r ", 'text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck1', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:48', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/action_save.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Front', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field']
+    Clickable Buttons: ['text: Cards: Card 1']
+    Other Buttons: ['text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck1', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:48', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+input 3.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Open features menu', 'content-desc: Voice input', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Enter', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Switch input method', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field']
+    Clickable Buttons: ['text: 3', 'text: Cards: Card 1']
+    Other Buttons: ["text: You will read app flow screenshots of test sequences. Is there any UI error, or a bug in the output after the given test sequence?  UI errors include broken images, missing images, duplicate UI elements, and so on. \r Provide your answer with yes or no. \r If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision.\r ", 'text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck1', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:48', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/action_save.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Front', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field']
+    Clickable Buttons: ['text: Cards: Card 1']
+    Other Buttons: ['text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck1', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:48', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click Navigate up.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: More options', 'content-desc: Add', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: AnkiDroid', 'text: 3 cards due (1 min)', 'text: deck1', 'text: 3', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today', 'text: 2:48', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/fab_expand_menu_button.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: More options', 'content-desc: Create deck', 'content-desc: Get shared decks', 'content-desc: Add', 'content-desc: Add', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: AnkiDroid', 'text: 3 cards due (1 min)', 'text: deck1', 'text: 3', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today', 'text: Create deck', 'text: Get shared decks', 'text: Add', 'text: 2:48', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/add_deck_action.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: CANCEL', 'text: OK']
+    Other Buttons: ['text: Create deck', 'text: 2:48', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+input deck2.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: deck2', 'text: CANCEL', 'text: OK']
+    Other Buttons: ['text: Create deck', 'text: 2:48', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click OK.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: More options', 'content-desc: Add', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: AnkiDroid', 'text: 3 cards due (1 min)', 'text: deck1', 'text: 3', 'text: 0', 'text: 0', 'text: deck2', 'text: 0', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today', 'text: 2:49', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click deck2.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: More options', 'content-desc: Add', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: HELP']
+    Other Buttons: ['text: AnkiDroid', 'text: 3 cards due (1 min)', 'text: deck1', 'text: 3', 'text: 0', 'text: 0', 'text: deck2', 'text: 0', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today', 'text: This deck is empty', 'text: 2:49', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/fab_expand_menu_button.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: More options', 'content-desc: Create deck', 'content-desc: Get shared decks', 'content-desc: Add', 'content-desc: Add', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: AnkiDroid', 'text: 3 cards due (1 min)', 'text: deck1', 'text: 3', 'text: 0', 'text: 0', 'text: deck2', 'text: 0', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today', 'text: Create deck', 'text: Get shared decks', 'text: Add', 'text: 2:49', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/add_note_action.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Front', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field', 'content-desc: Sticker Keyboard', 'content-desc: GIF Keyboard', 'content-desc: Clipboard', 'content-desc: Settings', 'content-desc: More features', 'content-desc: Close features menu', 'content-desc: Voice input', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Enter', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Switch input method', 'content-desc: Home']
+    Clickable Buttons: ['text: Cards: Card 1']
+    Other Buttons: ['text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck2', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:49', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+input 4.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field', 'content-desc: Sticker Keyboard', 'content-desc: GIF Keyboard', 'content-desc: Clipboard', 'content-desc: Settings', 'content-desc: More features', 'content-desc: Close features menu', 'content-desc: Voice input', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Enter', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Switch input method', 'content-desc: Home']
+    Clickable Buttons: ['text: 4', 'text: Cards: Card 1']
+    Other Buttons: ['text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck2', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:49', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/action_save.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Front', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: Cards: Card 1']
+    Other Buttons: ['text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck2', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:49', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+input 5.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field', 'content-desc: Sticker Keyboard', 'content-desc: GIF Keyboard', 'content-desc: Clipboard', 'content-desc: Settings', 'content-desc: More features', 'content-desc: Close features menu', 'content-desc: Voice input', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Enter', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Switch input method', 'content-desc: Home']
+    Clickable Buttons: ['text: 5', 'text: Cards: Card 1']
+    Other Buttons: ['text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck2', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:49', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/action_save.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Front', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: Cards: Card 1']
+    Other Buttons: ['text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck2', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:49', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+input 6.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field', 'content-desc: Sticker Keyboard', 'content-desc: GIF Keyboard', 'content-desc: Clipboard', 'content-desc: Settings', 'content-desc: More features', 'content-desc: Close features menu', 'content-desc: Voice input', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Enter', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Switch input method', 'content-desc: Home']
+    Clickable Buttons: ['text: 6', 'text: Cards: Card 1']
+    Other Buttons: ['text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck2', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:49', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/action_save.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Front', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: Cards: Card 1']
+    Other Buttons: ['text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck2', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:49', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+click Navigate up.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: More options', 'content-desc: Add', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: AnkiDroid', 'text: 6 cards due (2 min)', 'text: deck1', 'text: 3', 'text: 0', 'text: 0', 'text: deck2', 'text: 3', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today', 'text: 2:49', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+click deck1.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Undo', 'content-desc: Flag card', 'content-desc: More options']
+    Other Buttons: ['text: deck1', 'text: 1 minute left', 'text: 3', 'text: 0', 'text: 0', 'text: AnkiDroid Flashcard', 'text: 1', 'text: SHOW ANSWER', 'text: 2:50', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click More options.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: 2:50', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.', 'text: Enable whiteboard', 'text: Edit note', 'text: Edit tags', 'text: Replay audio', 'text: Check Pronunciation', 'text: Bury card', 'text: Suspend card', 'text: Delete note', 'text: Mark note', 'text: Reschedule', 'text: Options'].
+
+click 796:312.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: More options', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field']
+    Clickable Buttons: ['text: 1', 'text: Cards: Card 1']
+    Other Buttons: ['text: Edit note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck1', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:50', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/note_deck_spinner.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: deck1', 'text: deck2', 'text: Default']
+    Other Buttons: ['text: 2:50', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click deck2.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: More options', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field']
+    Clickable Buttons: ['text: 1', 'text: Cards: Card 1']
+    Other Buttons: ['text: Edit note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck2', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:50', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/action_save.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Undo', 'content-desc: Flag card', 'content-desc: More options']
+    Other Buttons: ['text: deck1', 'text: 1 minute left', 'text: 2', 'text: 0', 'text: 0', 'text: AnkiDroid Flashcard', 'text: 2', 'text: SHOW ANSWER', 'text: 2:50', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click More options.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: 2:50', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.', 'text: Enable whiteboard', 'text: Edit note', 'text: Edit tags', 'text: Replay audio', 'text: Check Pronunciation', 'text: Bury card', 'text: Suspend card', 'text: Delete note', 'text: Mark note', 'text: Reschedule', 'text: Options'].
+
+click 796:312.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: More options', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field']
+    Clickable Buttons: ['text: 2', 'text: Cards: Card 1']
+    Other Buttons: ['text: 2:50', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.', 'text: Edit note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck1', 'text: Front', 'text: Back', 'text: Tags: '].
+
+click com.ichi2.anki:id/note_deck_spinner.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: deck1', 'text: deck2', 'text: Default']
+    Other Buttons: ['text: 2:50', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click deck2.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: More options', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field']
+    Clickable Buttons: ['text: 2', 'text: Cards: Card 1']
+    Other Buttons: ['text: 2:51', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.', 'text: Edit note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck2', 'text: Front', 'text: Back', 'text: Tags: '].
+
+click com.ichi2.anki:id/action_save.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Undo', 'content-desc: Flag card', 'content-desc: More options']
+    Other Buttons: ['text: deck1', 'text: 0 minutes left', 'text: 1', 'text: 0', 'text: 0', 'text: AnkiDroid Flashcard', 'text: 3', 'text: SHOW ANSWER', 'text: 2:51', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click Navigate up.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'text: Decks', 'text: Card browser', 'text: Statistics']
+    Clickable Buttons: ['text: OFF']
+    Other Buttons: ['text: Night mode', 'text: Settings', 'text: Help', 'text: Send feedback', 'text: 2:51', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click Card browser.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Add note', 'content-desc: Search', 'content-desc: More options', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: deck1', 'text: 1 card shown', 'text: Question', 'text: Answer', 'text: 3', 'text: 2:51', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click deck1.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: All decks', 'text: deck1', 'text: deck2', 'text: Default']
+    Other Buttons: ['text: 2:52', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click deck2.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Add note', 'content-desc: Search', 'content-desc: More options', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: deck2', 'text: 5 cards shown', 'text: Question', 'text: Answer', 'text: 1', 'text: 2', 'text: 4', 'text: 5', 'text: 6', 'text: 2:52', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.'].
+
+long_click 1.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Flag card', 'content-desc: Mark notes', 'content-desc: More options', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: 1', 'text: Question', 'text: Answer', 'text: 1', 'text: 2', 'text: 4', 'text: 5', 'text: 6', 'text: 2:52', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click 2.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Flag card', 'content-desc: Mark notes', 'content-desc: More options', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: 2', 'text: Question', 'text: Answer', 'text: 1', 'text: 2', 'text: 4', 'text: 5', 'text: 6', 'text: 2:53', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click More options.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: Delete notes', 'text: Suspend cards', 'text: Change deck', 'text: Reposition', 'text: Reschedule', 'text: Reset progress', 'text: Preview', 'text: Select all', 'text: Select none', 'text: 2:53', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click Preview.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Edit note', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: deck2', 'text: AnkiDroid Flashcard', 'text: 1', 'text: SHOW ANSWER', 'text: 2:53', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click com.ichi2.anki:id/action_edit.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: More options', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: 1', 'text: Cards: Card 1']
+    Other Buttons: ['text: Edit note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck2', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:53', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click Front.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Sticker Keyboard', 'content-desc: GIF Keyboard', 'content-desc: Clipboard', 'content-desc: Settings', 'content-desc: More features', 'content-desc: Close features menu', 'content-desc: Voice input', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Enter', 'content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: More options', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Switch input method', 'content-desc: Home']
+    Clickable Buttons: ['text: 1', 'text: Cards: Card 1']
+    Other Buttons: ['text: Edit note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck2', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:53', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+input 1-modified.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Sticker Keyboard', 'content-desc: GIF Keyboard', 'content-desc: Clipboard', 'content-desc: Settings', 'content-desc: More features', 'content-desc: Close features menu', 'content-desc: Voice input', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Enter', 'content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: More options', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field', 'content-desc: Back', 'content-desc: Overview', 'content-desc: Switch input method', 'content-desc: Home']
+    Clickable Buttons: ['text: 11-modified', 'text: Cards: Card 1']
+    Other Buttons: ['text: Edit note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: deck2', 'text: Front', 'text: Back', 'text: Tags: ', 'text: 2:53', 'content-desc: Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'content-desc: Google Play Protect notification: Google Play Protect is turned on', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].

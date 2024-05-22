@@ -1,0 +1,64 @@
+You will read an Android app sequence, containing actions to reach each page and the text on each page. Then I will send you a screenshot of the last page. Your task is to determine whether there is a UI error in the screenshot, if there is anything that does not correspond to the text on the page, or if there is a potential discrepancy. 
+If you detect error messages, please also check the consistency or correctness of these elements about the provided sequence.
+If you observe redundant or duplicate elements, it counts as a UI error.
+If you observe part of the text, or sentences that are cut off, it means complete statements are truncated. It counts as a UI error.
+Ignore system time and status bar Information and do not analyze. You should focus only on the information for the app itself.
+If the screen is rotated, analyze the text accordingly.
+If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision. Your answer should also be brief and concise.
+Initial structure:
+
+    Clickable Buttons: ['Allow', 'Don’t allow']
+    Other Buttons: ['9:26', 'Digital Wellbeing notification: Need time to focus?', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone three bars.', 'Battery 100 percent.', 'Allow AnkiDroid to send you notifications?'].
+
+click Allow.
+Output structure:
+
+    Clickable Buttons: ['OK']
+    Other Buttons: ['9:26', 'Digital Wellbeing notification: Need time to focus?', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone three bars.', 'Battery 100 percent.', 'Welcome to AnkiDroid!', 'AnkiDroid requires storage permission, which we use exclusively to store your AnkiDroid collection, flashcard media and backups. Our code is open-source, written by volunteers, and trusted by millions.\n\nIf you have any questions, please access our in-app manual or visit our support forums.\n\nThank you for trying AnkiDroid!\n—AnkiDroid Development Team'].
+
+click OK.
+Output structure:
+
+    Clickable Buttons: ['Allow', 'Don’t allow']
+    Other Buttons: ['Allow AnkiDroid to access photos, videos, music, and audio on this device?', '9:27', 'Digital Wellbeing notification: Need time to focus?', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone two bars.', 'Battery 100 percent.'].
+
+click Allow.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'Search decks', 'Sync (log in)', 'More options', 'Add']
+    Other Buttons: ['9:27', 'Digital Wellbeing notification: Need time to focus?', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.', 'AnkiDroid', '0 cards due (0 s)', '11', '0', '0', '0', '2', '0', '0', '0', '22', '0', '0', '0', '3', '0', '0', '0', '33', '0', '0', '0', '4', '0', '0', '0', '5', '0', '0', '0', '6', '0', '0', '0', '7', '0', '0', '0', '8', '0', '0', '0', '9', '0', '0', '0', 'lol', '0', '0', '0', 'Studied 0 cards in 0 minutes today'].
+
+click Navigate up.
+Output structure:
+    Long Clickable Buttons: ['Decks', 'Card browser', 'Statistics']
+    Clickable Buttons: ['OFF']
+    Other Buttons: ['9:27', 'Digital Wellbeing notification: Need time to focus?', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.', 'Night mode', 'Settings', 'Help'].
+
+click Help.
+Output structure:
+
+    Clickable Buttons: ['Using AnkiDroid', 'Get Help', 'Support AnkiDroid', 'Community']
+    Other Buttons: ['Help', '9:28', 'Digital Wellbeing notification: Need time to focus?', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.'].
+
+click Get Help.
+Output structure:
+
+    Clickable Buttons: ['Mailing List', 'Report a Bug', 'Send troubleshooting report']
+    Other Buttons: ['Get Help', '9:28', 'Digital Wellbeing notification: Need time to focus?', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.'].
+
+click Send troubleshooting report.
+Output structure:
+
+    Clickable Buttons: ['Mailing List', 'Report a Bug', 'Send troubleshooting report']
+    Other Buttons: ['Get Help', '9:28', 'Digital Wellbeing notification: Need time to focus?', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.'].
+
+click Cancel.
+Output structure:
+
+    Clickable Buttons: ['Mailing List', 'Report a Bug', 'Send troubleshooting report']
+    Other Buttons: ['Get Help', '9:29', 'Digital Wellbeing notification: Need time to focus?', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone three bars.', 'Battery 100 percent.'].
+
+click Send troubleshooting report.
+Output structure:
+
+    Clickable Buttons: ['Mailing List', 'Report a Bug', 'Send troubleshooting report']
+    Other Buttons: ['Get Help', '9:29', 'Digital Wellbeing notification: Need time to focus?', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone two bars.', 'Battery 100 percent.'].

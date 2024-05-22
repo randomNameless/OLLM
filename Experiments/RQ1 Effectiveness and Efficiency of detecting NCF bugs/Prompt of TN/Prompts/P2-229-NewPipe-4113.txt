@@ -1,0 +1,35 @@
+You will read an Android app sequence, containing actions to reach each page and the text on each page. Then I will send you a screenshot of the last page. Your task is to determine whether there is a UI error in the screenshot, if there is anything that does not correspond to the text on the page, or if there is a potential discrepancy. 
+If you detect error messages, please also check the consistency or correctness of these elements about the provided sequence.
+If you observe redundant or duplicate elements, it counts as a UI error.
+If you observe part of the text, or sentences that are cut off, it means complete statements are truncated. It counts as a UI error.
+Ignore system time and status bar Information and do not analyze. You should focus only on the information for the app itself.
+If the screen is rotated, analyze the text accordingly.
+If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision. Your answer should also be brief and concise.
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Open Drawer', 'content-desc: Search', 'content-desc: Subscriptions', 'content-desc: Bookmarked Playlists']
+    Clickable Buttons: ['text: REPORT', 'text: RETRY']
+    Other Buttons: ['text: Trending', 'content-desc: Trending', 'text: Sorry, something went wrong.'].
+
+click Open Drawer.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Close Drawer', 'content-desc: Search', 'content-desc: Subscriptions', 'content-desc: Bookmarked Playlists', 'content-desc: Toggle service, currently selected:YouTube']
+    Clickable Buttons: ['text: REPORT', 'text: RETRY']
+    Other Buttons: ['text: Trending', 'content-desc: Trending', 'text: Sorry, something went wrong.', 'text: NewPipe', 'text: YouTube', 'text: Trending', 'text: Subscriptions', "text: What's New", 'text: Bookmarked Playlists', 'text: Downloads', 'text: History', 'text: Settings', 'text: About'].
+
+click About.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: About', 'content-desc: Licenses']
+    Clickable Buttons: ['text: VIEW ON GITHUB', 'text: GIVE BACK', 'text: OPEN IN BROWSER', 'text: READ PRIVACY POLICY']
+    Other Buttons: ['text: About NewPipe', 'text: ABOUT', 'text: LICENSES', 'content-desc: TODO', 'text: NewPipe', 'text: 0.19.2', 'text: Libre lightweight streaming on Android.', 'text: Contribute', 'text: Whether you have ideas of; translation, design changes, code cleaning, or real heavy code changes—help is always welcome. The more is done the better it gets!', 'text: Donate', 'text: NewPipe is developed by volunteers spending their free time bringing you the best user experience. Give back to help developers make NewPipe even better while they enjoy a cup of coffee.', 'text: Website', 'text: Visit the NewPipe Website for more info and news.', "text: NewPipe's Privacy Policy", "text: The NewPipe project takes your privacy very seriously. Therefore, the app does not collect any data without your consent.\nNewPipe's privacy policy explains in detail what data is sent and stored when you send a crash report."].
+
+click Licenses.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: About', 'content-desc: Licenses']
+    Clickable Buttons: ['text: READ LICENSE']
+    Other Buttons: ['text: About NewPipe', 'text: ABOUT', 'text: LICENSES', "text: NewPipe's License", 'text: NewPipe is copyleft libre software: You can use, study share and improve it at will. Specifically you can redistribute and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.', 'text: Third-party Licenses', 'text: ACRA', 'text: © 2013 by Kevin Gaudin under ALv2', 'text: CircleImageView', 'text: © 2014 - 2020 by Henning Dodenhof under ALv2', 'text: ExoPlayer', 'text: © 2014 - 2020 by Google Inc under ALv2', 'text: Giga Get', 'text: © 2014 - 2015 by Peter Cai under GPLv2', 'text: Groupie', 'text: © 2016 by Lisa Wray under MIT', 'text: Jsoup', 'text: © 2017 by Jonathan Hedley under MIT', 'text: Markwon', 'text: © 2017 - 2020 by Noties under ALv2', 'text: NewPipe Extractor', 'text: © 2017 - 2020 by Christian Schabesberger under GPLv3'].
+
+click READ LICENSE.
+Output structure:
+
+    Clickable Buttons: ['text: OK']
+    Other Buttons: ['text: GNU General Public License, Version 3.0'].

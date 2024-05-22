@@ -1,0 +1,48 @@
+You will read an Android app sequence, containing actions to reach each page and the text on each page. Then I will send you a screenshot of the last page. Your task is to determine whether there is a UI error in the screenshot, if there is anything that does not correspond to the text on the page, or if there is a potential discrepancy. 
+If you detect error messages, please also check the consistency or correctness of these elements about the provided sequence.
+If you observe redundant or duplicate elements, it counts as a UI error.
+If you observe part of the text, or sentences that are cut off, it means complete statements are truncated. It counts as a UI error.
+Ignore system time and status bar Information and do not analyze. You should focus only on the information for the app itself.
+If the screen is rotated, analyze the text accordingly.
+If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision. Your answer should also be brief and concise.
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'text: OFF', 'text: OFF', 'text: ON']
+    Other Buttons: ['text: Settings', 'text: Notes', 'text: Condensed note list', 'text: Sort order', 'text: Alphabetically, A-Z', 'text: Tags', 'text: Sort alphabetically', 'text: Appearance', 'text: Theme', 'text: Light', 'text: Editor', 'text: Font size', 'text: Normal', 'text: Detect links', 'text: Passcode Lock', 'text: Turn passcode lock on', 'text: Screenshots are disabled while passcode lock is on', 'text: Change passcode', 'text: Account', 'text: 8:56', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click Open drawer.
+Output structure:
+    Long Clickable Buttons: ['text: All Notes', 'text: Trash', 'text: tag1', 'text: Untagged Notes']
+    Clickable Buttons: ['text: EDIT']
+    Other Buttons: ['text: 8:49', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.', 'text: Settings', 'text: Tags'].
+
+click Settings.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'text: OFF', 'text: OFF', 'text: ON']
+    Other Buttons: ['text: 8:50', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.', 'text: Settings', 'text: Notes', 'text: Condensed note list', 'text: Sort order', 'text: Alphabetically, A-Z', 'text: Tags', 'text: Sort alphabetically', 'text: Appearance', 'text: Theme', 'text: Light', 'text: Editor', 'text: Font size', 'text: Normal', 'text: Detect links', 'text: Passcode Lock', 'text: Turn passcode lock on', 'text: Screenshots are disabled while passcode lock is on', 'text: Change passcode', 'text: Account'].
+
+click Sort order.
+Output structure:
+
+    Clickable Buttons: ['text: Newest modified date', 'text: Oldest modified date', 'text: Newest created date', 'text: Oldest created date', 'text: Alphabetically, A-Z', 'text: Alphabetically, Z-A', 'text: CANCEL']
+    Other Buttons: ['text: 8:50', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.', 'text: Sort order'].
+
+click Alphabetically, A-Z.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'text: OFF', 'text: OFF', 'text: ON']
+    Other Buttons: ['text: 8:51', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.', 'text: Settings', 'text: Notes', 'text: Condensed note list', 'text: Sort order', 'text: Newest modified date', 'text: Tags', 'text: Sort alphabetically', 'text: Appearance', 'text: Theme', 'text: Light', 'text: Editor', 'text: Font size', 'text: Normal', 'text: Detect links', 'text: Passcode Lock', 'text: Turn passcode lock on', 'text: Screenshots are disabled while passcode lock is on', 'text: Change passcode', 'text: Account'].
+
+back.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Open drawer', 'content-desc: Search Notes or Tags', 'content-desc: New Note']
+    Other Buttons: ['text: 8:51', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.', 'text: All Notes', 'text: Yrghdg', 'text: Dbfgsdv', 'text: Sdfserfw', 'text: Qwertt', 'text: 16-3'].
+
+click Open drawer.
+Output structure:
+    Long Clickable Buttons: ['text: All Notes', 'text: All Notes', 'text: Trash', 'text: Trash', 'text: tag1', 'text: tag1', 'text: Untagged Notes']
+    Clickable Buttons: ['text: EDIT', 'text: EDIT']
+    Other Buttons: ['text: 8:51', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.', 'text: Settings', 'text: Settings', 'text: Tags', 'text: Tags'].
+
+click Settings.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'text: OFF', 'text: OFF', 'text: ON']
+    Other Buttons: ['text: 8:51', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.', 'text: Settings', 'text: Notes', 'text: Condensed note list', 'text: Sort order', 'text: Newest modified date', 'text: Tags', 'text: Sort alphabetically', 'text: Appearance', 'text: Theme', 'text: Light', 'text: Editor', 'text: Font size', 'text: Normal', 'text: Detect links', 'text: Passcode Lock', 'text: Turn passcode lock on', 'text: Screenshots are disabled while passcode lock is on', 'text: Change passcode', 'text: Account'].

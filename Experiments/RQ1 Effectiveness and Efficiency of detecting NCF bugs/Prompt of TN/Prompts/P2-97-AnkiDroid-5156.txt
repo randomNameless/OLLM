@@ -1,0 +1,22 @@
+You will read an Android app sequence, containing actions to reach each page and the text on each page. Then I will send you a screenshot of the last page. Your task is to determine whether there is a UI error in the screenshot, if there is anything that does not correspond to the text on the page, or if there is a potential discrepancy. 
+If you detect error messages, please also check the consistency or correctness of these elements about the provided sequence.
+If you observe redundant or duplicate elements, it counts as a UI error.
+If you observe part of the text, or sentences that are cut off, it means complete statements are truncated. It counts as a UI error.
+Ignore system time and status bar Information and do not analyze. You should focus only on the information for the app itself.
+If the screen is rotated, analyze the text accordingly.
+If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision. Your answer should also be brief and concise.
+
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Synchronization', 'content-desc: More options', 'content-desc: Expand', 'content-desc: Add']
+    Other Buttons: ['text: AnkiDroid', 'text: 55 cards due (0 min)', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: Default', 'text: 0', 'text: 0', 'text: 5', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: Fundamental Math Vocabulary: English–Chinese Simplified 基本数学术语', 'text: 20', 'text: 0', 'text: 0', 'text: The Kodansha Kanji Learners Course', 'text: 20', 'text: 7', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: new deck', 'text: 2', 'text: 0', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: test', 'text: 1', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today'].
+
+click Navigate up.
+Output structure:
+    Long Clickable Buttons: ['text: Decks', 'text: Card browser', 'text: Statistics', 'content-desc: Navigate up', 'content-desc: Synchronization', 'content-desc: More options', 'content-desc: Expand', 'content-desc: Add']
+    Clickable Buttons: ['text: OFF']
+    Other Buttons: ['text: Night mode', 'text: Settings', 'text: Help', 'text: Send feedback', 'text: AnkiDroid', 'text: 55 cards due (0 min)', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: Default', 'text: 0', 'text: 0', 'text: 5', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: Fundamental Math Vocabulary: English–Chinese Simplified 基本数学术语', 'text: 20', 'text: 0', 'text: 0', 'text: The Kodansha Kanji Learners Course', 'text: 20', 'text: 7', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: new deck', 'text: 2', 'text: 0', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: test', 'text: 1', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today'].
+
+click Card browser.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Add note', 'content-desc: Search', 'content-desc: More options']
+    Other Buttons: ['text: Default', 'text: 5 cards shown', 'text: Question', 'text: Answer', 'text: q7', 'text: q7', 'text: test', 'text: αὐτός', 'text: test', 'text: test', 'text: test', 'text: test', 'text: test', 'text: test'].

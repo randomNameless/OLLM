@@ -1,0 +1,75 @@
+You will read an app flow, containing page text and actions to reach other pages. Then I will ask you: Is there any logical error, or a bug in the output after the given test sequence?
+While you read the flow and answer questions, please read the rules below very carefully and consider them when you provide answers. 
+A logic error means the app didn’t provide the expected result after performing actions. While evaluating logic errors, you should also consider the rules below:
+You should not analyze battery, system time and signal fluctuates in page content and coordinate in actions. This means if you see changes in time, signal, or battery, you should not consider them logic errors or inconsistencies. You should not consider them as input. And your answer should be no.
+You should focus only on analyzing the logic flow without making any feedback or expected behavior predictions. 
+You should not analyze duplicated UI elements. 
+You should not analyze the lack of confirmation messages. 
+You should not analyze unchanged output structure. 
+The rules are irrelevant to the logic flow.
+Provide your answer with yes or no. 
+If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision.
+Initial structure:
+    Long Clickable Buttons: ['Back', 'Overview', 'Home']
+    Clickable Buttons: ['OK']
+    Other Buttons: ['12:08', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'ATX notification: UIAutomator', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone three bars.', 'Battery 100 percent.', 'Welcome to AnkiDroid!', 'AnkiDroid requires storage permission, which we use exclusively to store your AnkiDroid collection, flashcard media and backups. Our code is open-source, written by volunteers, and trusted by millions.\n\nIf you have any questions, please access our in-app manual or visit our support forums.\n\nThank you for trying AnkiDroid!\n—AnkiDroid Development Team'].
+
+click OK.
+Output structure:
+    Long Clickable Buttons: ['Back', 'Overview', 'Home']
+    Clickable Buttons: ['Allow', 'Deny']
+    Other Buttons: ['12:08', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'ATX notification: UIAutomator', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone three bars.', 'Battery 100 percent.', 'Allow AnkiDroid to access photos, media, and files on your device?'].
+
+click Allow.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'Sync (log in)', 'Search decks', 'More options', 'Add', 'Back', 'Overview', 'Home']
+    Other Buttons: ['12:08', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'ATX notification: UIAutomator', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone three bars.', 'Battery 100 percent.', 'AnkiDroid', 'Collection is empty', 'Start adding cards\nusing the + icon.'].
+
+click com.ichi2.anki:id/fab_expand_menu_button.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'Sync (log in)', 'Search decks', 'More options', 'Create deck', 'Get shared decks', 'Add', 'Add', 'Back', 'Overview', 'Home']
+    Other Buttons: ['12:08', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'ATX notification: UIAutomator', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone three bars.', 'Battery 100 percent.', 'AnkiDroid', 'Collection is empty', 'Start adding cards\nusing the + icon.', 'Create deck', 'Get shared decks', 'Add'].
+
+click com.ichi2.anki:id/add_note_action.
+Output structure:
+    Long Clickable Buttons: ['Search', 'Sticker Keyboard', 'GIF Keyboard', 'Clipboard', 'More features', 'Close features menu', 'Voice input', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'Shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'Delete', 'Symbol keyboard', ',', 'Emoji button', 'Space', '.', 'Enter', 'Navigate up', 'Save', 'Preview', 'Front', 'Attach multimedia content to the Front field', 'Back', 'Attach multimedia content to the Back field', 'Back', 'Overview', 'Switch input method', 'Home']
+    Clickable Buttons: ['Cards: Card 1']
+    Other Buttons: ['12:08', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'ATX notification: UIAutomator', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone three bars.', 'Battery 100 percent.', 'Add note', 'Type:', 'Basic', 'Deck:', 'Default', 'Front', 'Back', 'Tags: '].
+
+click 1282:808.
+Output structure:
+    Long Clickable Buttons: ['Back', 'Overview', 'Switch input method', 'Home']
+    Other Buttons: ['Add image', 'Add audio clip', 'Record audio', 'Advanced editor', '12:08', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'ATX notification: UIAutomator', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone three bars.', 'Battery 100 percent.'].
+
+long_click 810:938.
+Output structure:
+    Long Clickable Buttons: ['Back', 'Overview', 'Home']
+    Clickable Buttons: ['While using the app', 'Only this time', 'Deny']
+    Other Buttons: ['Allow AnkiDroid to take pictures and record video?', '12:08', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'ATX notification: UIAutomator', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone three bars.', 'Battery 100 percent.'].
+
+click 93:1472.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'Text', 'Done', 'More options', 'Back', 'Overview', 'Home']
+    Clickable Buttons: ['GALLERY', 'CAMERA']
+    Other Buttons: ['Editing field', '12:08', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'ATX notification: UIAutomator', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone three bars.', 'Battery 100 percent.'].
+
+click CAMERA.
+Output structure:
+    Long Clickable Buttons: ['Options', 'Shutter', 'Back', 'Overview', 'Home']
+    Other Buttons: ['Options'].
+
+click 0:2532.
+Output structure:
+    Long Clickable Buttons: ['Retake', 'Done', 'Cancel', 'Back', 'Overview', 'Home'].
+
+click com.android.camera2:id/done_button.
+Output structure:
+    Long Clickable Buttons: ['Back', 'Overview', 'Home']
+    Clickable Buttons: ['NO', 'OK']
+    Other Buttons: ['Do you want to crop this image?', '12:08', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'ATX notification: UI Automator', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone three bars.', 'Battery 100 percent.'].
+
+click OK.
+Output structure:
+    Long Clickable Buttons: ['Navigate up', 'Text', 'Done', 'More options', 'Back', 'Overview', 'Home']
+    Clickable Buttons: ['145 kB', 'GALLERY', 'CAMERA', 'CROP IMAGE']
+    Other Buttons: ['Editing field', '12:08', 'Android Setup notification: Finish setting up your sdk_gphone_x86', 'ATX notification: UI Automator', 'Google Play Protect notification: Google Play Protect is turned on', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone three bars.', 'Battery 100 percent.'].
