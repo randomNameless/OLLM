@@ -1,1 +1,0 @@
-Yes: After rotating the device and pressing back, the output structure incorrectly shows "0 folders and 0 files" with "No Files", which contradicts the previous state before the rotation that showed "14 folders and 0 files". This inconsistency suggests a logic error in handling the display of files and folders after a rotation and back navigation action.

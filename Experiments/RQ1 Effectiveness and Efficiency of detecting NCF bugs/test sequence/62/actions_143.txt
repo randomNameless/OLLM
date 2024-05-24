@@ -1,5 +1,0 @@
-click Navigate up
-scroll_to App Manager
-click App Manager
-click com.amaze.filemanager:id/properties
-click Uninstall

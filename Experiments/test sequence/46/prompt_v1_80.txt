@@ -1,0 +1,37 @@
+
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Synchronization', 'content-desc: More options', 'content-desc: Expand', 'content-desc: Add']
+    Other Buttons: ['text: AnkiDroid', 'text: 64 cards due (21 min)', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: Default', 'text: 7', 'text: 0', 'text: 5', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: Fundamental Math Vocabulary: English–Chinese Simplified 基本数学术语', 'text: 20', 'text: 0', 'text: 0', 'text: The Kodansha Kanji Learners Course', 'text: 20', 'text: 7', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: new deck', 'text: 5', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today'].
+
+click new deck.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Undo', 'content-desc: Flag card', 'content-desc: More options']
+    Other Buttons: ['text: new deck', 'text: 2 minutes left', 'text: 5', 'text: 0', 'text: 0', 'text: SHOW ANSWER'].
+
+click More options.
+Output structure:
+
+    Other Buttons: ['text: Edit note', 'text: Replay audio', 'text: Bury card', 'text: Suspend card', 'text: Delete note', 'text: Mark note', 'text: Reschedule', 'text: Enable whiteboard', 'text: Options'].
+
+click Enable whiteboard.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Hide whiteboard', 'content-desc: Undo', 'content-desc: Flag card', 'content-desc: More options']
+    Other Buttons: ['text: new deck', 'text: 2 minutes left', 'text: 5', 'text: 0', 'text: 0', 'text: AnkiDroid Flashcard', 'text: q1', 'text: SHOW ANSWER'].
+
+swipe 700:500:700:1500.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Hide whiteboard', 'content-desc: Undo', 'content-desc: Flag card', 'content-desc: More options']
+    Other Buttons: ['text: new deck', 'text: 2 minutes left', 'text: 5', 'text: 0', 'text: 0', 'text: AnkiDroid Flashcard', 'text: q1', 'text: SHOW ANSWER'].
+
+click Undo.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Hide whiteboard', 'content-desc: Undo', 'content-desc: Flag card', 'content-desc: More options']
+    Other Buttons: ['text: new deck', 'text: 2 minutes left', 'text: 5', 'text: 0', 'text: 0', 'text: AnkiDroid Flashcard', 'text: q1', 'text: SHOW ANSWER'].
+
+swipe 700:500:700:1500.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Hide whiteboard', 'content-desc: Undo', 'content-desc: Flag card', 'content-desc: More options']
+    Other Buttons: ['text: new deck', 'text: 2 minutes left', 'text: 5', 'text: 0', 'text: 0', 'text: AnkiDroid Flashcard', 'text: q1', 'text: SHOW ANSWER'].
+
+
+

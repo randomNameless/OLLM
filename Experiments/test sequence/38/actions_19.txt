@@ -1,0 +1,12 @@
+click com.automattic.simplenote:id/menu_search
+click Search notes or tags
+input short_search
+enter
+input short_search2
+click Collapse
+click com.automattic.simplenote:id/menu_search
+click Search notes or tags
+input very_looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong_search
+enter
+click Collapse
+click com.automattic.simplenote:id/menu_search

@@ -1,5 +1,0 @@
-click new deck
-back
-click Navigate up
-click Card browser
-

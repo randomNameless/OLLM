@@ -1,0 +1,26 @@
+
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options']
+    Other Buttons: ['text: Amaze', 'text: /storage/emulated/0', 'text: 14 folders and 0 files', 'text: Folders', 'text: Alarms', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Android', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: AnkiDroid', 'text: Dec 20, 2023 | 8:18 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Audiobooks', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: DCIM', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Documents', 'text: Dec 20, 2023 | 7:22 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Download', 'text: Feb 8 | 10:18 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Movies', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Music', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'image-button-resource-idcom.amaze.filemanager:id/sd_main_fab'].
+
+click Download.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options', 'content-desc: icon', 'content-desc: icon']
+    Other Buttons: ['text: Amaze', 'text: /storage/emulated/0/Download', 'text: 0 folders and 3 files', 'text: Files', 'text: messi.jpg', 'text: Feb 8 | 9:45 AM', 'text: 22.82 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: messi.zip', 'text: Feb 15 | 7:35 AM', 'text: 39 B', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: messi2.jpg', 'text: Feb 8 | 9:43 AM', 'text: 153 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'image-button-resource-idcom.amaze.filemanager:id/sd_main_fab'].
+
+click com.amaze.filemanager:id/properties.
+Output structure:
+
+    Other Buttons: ['text: Open with', 'text: Cut', 'text: Copy', 'text: Delete', 'text: Rename', 'text: Encrypt', 'text: Properties', 'text: Share'].
+
+click Rename.
+Output structure:
+
+    Clickable Buttons: ['text: messi.jpg', 'text: CANCEL', 'text: SAVE']
+    Other Buttons: ['text: Rename'].
+
+input com.amaze.filemanager:id/singleedittext_input messi 19 99.jpg.
+Output structure:
+
+    Clickable Buttons: ['text: messi 19 99.jpg', 'text: CANCEL', 'text: SAVE']
+    Other Buttons: ['text: Rename'].

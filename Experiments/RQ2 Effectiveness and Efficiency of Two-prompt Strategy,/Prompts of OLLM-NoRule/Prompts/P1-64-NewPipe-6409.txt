@@ -1,0 +1,17 @@
+You will read an app flow, containing page text and actions to reach other pages. Then I will ask you: Is there any logical error, or a bug in the output after the given test sequence? A logic error means the app didn’t provide the expected result after performing actions. Provide your answer with yes or no.  If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision.
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Open Drawer', 'content-desc: Search', 'content-desc: Subscriptions', 'content-desc: Bookmarked Playlists']
+    Clickable Buttons: ['text: REPORT', 'text: RETRY']
+    Other Buttons: ['text: Trending', 'content-desc: Trending', 'text: Sorry, something went wrong.'].
+
+click Search.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Clear', 'content-desc: More options']
+    Clickable Buttons: ['text: Search']
+    Other Buttons: ['content-desc: Search'].
+
+input org.schabi.newpipe:id/toolbar_search_edit_text linus tech tips.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Clear', 'content-desc: More options']
+    Clickable Buttons: ['text: linus tech tips']
+    Other Buttons: ['content-desc: Search', 'text: linus tech tips', 'text: linus tech tips drama', 'text: linus tech tips hard r', 'text: linus tech tips building a pc', 'text: linus tech tips controversy', 'text: linus tech tips apology', 'text: linus tech tips laptop', 'text: linus tech tips secret shopper', 'text: linus tech tips hacked', 'text: linus tech tips steam deck', 'text: linus tech tips madison', 'text: linus tech tips intel upgrade'].

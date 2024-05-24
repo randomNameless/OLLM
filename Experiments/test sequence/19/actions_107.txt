@@ -1,0 +1,42 @@
+click OK
+click Allow
+click com.ichi2.anki:id/fab_main
+click com.ichi2.anki:id/add_deck_action
+input 1
+click OK
+click 1
+click com.ichi2.anki:id/fab_main
+click com.ichi2.anki:id/add_note_action
+input 1
+click com.ichi2.anki:id/action_save
+input 2
+click com.ichi2.anki:id/action_save
+input 3
+click com.ichi2.anki:id/action_save
+click Navigate up
+click com.ichi2.anki:id/fab_main
+click com.ichi2.anki:id/add_deck_action
+input 2
+click OK
+click 2
+click com.ichi2.anki:id/fab_main
+click com.ichi2.anki:id/add_note_action
+input 4
+click com.ichi2.anki:id/action_save
+input 5
+click com.ichi2.anki:id/action_save
+input 6
+click com.ichi2.anki:id/action_save
+click Navigate up
+click Navigate up
+click Card browser
+click com.ichi2.anki:id/action_search
+input 1
+wait
+enter
+click com.ichi2.anki:id/snackbar_action
+
+
+
+
+

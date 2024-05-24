@@ -1,0 +1,19 @@
+You will read an app flow, containing page text and actions to reach other pages. Then I will ask you: Is there any logical error, or a bug in the output after the given test sequence? A logic error means the app didn’t provide the expected result after performing actions. Provide your answer with yes or no.  If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision.Output structure:
+    Long Clickable Buttons: ['Open menu', 'Search', 'Sort', 'Filter', 'Refresh', 'More options', 'Show information', 'Show podcast settings', 'Download', 'Pause', 'Download', 'Download', 'Download', 'Download', 'Pause', 'Add to Favorites', 'Set sleep timer', 'Audio controls', 'More options', 'Switch pages']
+    Other Buttons: ['9:52', 'Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.', 'New Heights with Jason and Travis Kelce', 'Wave Sports + Entertainment', 'Travis Goes Back to the Super Bowl, Jason on New Eagles Coaches & The Legacy of NFL Blitz | Ep 76', 'Episode is in the queue', '·', 'Jan 31', '·', '113 MB', '00:00:40', '01:33:33', 'Travis Wins on the Road, Jason Celebrates Shirtless and Full Divisional Round Recap | Ep 75', 'Episode is in the queue', '·', 'Jan 24', '·', '112 MB', '00:00:03', '01:32:25', 'Travis on Sub-Zero Football, Jason on Eagles Future and Full Wild Card Recap | Ep 74', 'Jan 17', '·', '112 MB', '01:33:03', "Regular Season Finale, Jameis Goes Rogue and Playoffs? We're talkin’ playoffs? | Ep 73", 'Jan 10', '·', '93 MB', '01:17:37', 'Eagles New Year Struggles, Chiefs Swag Surf Comeback & A Mayo Dunking | Ep 72', 'Jan 3', '·', '119 MB', '01:38:49', "The Kelce Family on Mom's Favorite, Dad's Nicknames and Kylie’s Mountain Disaster | Ep 71", 'Dec 29, 2023', '·', '113 MB', '01:33:56', 'Media player', 'Travis Wins on the Road, Jason Celebrates Shirtless and Full Divisional Round Recap | Ep 75', 'New Heights with Jason and Travis Kelce'].
+
+click Open menu.
+Output structure:
+    Long Clickable Buttons: ['Settings']
+    Clickable Buttons: ['2']
+    Other Buttons: ['9:52', 'Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.', 'Queue', 'Episodes', 'Subscriptions', 'Downloads', 'Playback History', 'Add Podcast', 'New Heights with Jason and Travis Kelce', 'Settings'].
+
+click Playback History.
+Output structure:
+    Long Clickable Buttons: ['Open menu', 'Clear History', 'Download', 'Pause', 'Add to Favorites', 'Set sleep timer', 'Audio controls', 'More options', 'Switch pages']
+    Other Buttons: ['9:52', 'Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.', 'Playback History', 'Travis Goes Back to the Super Bowl, Jason on New Eagles Coaches & The Legacy of NFL Blitz | Ep 76', 'Episode is in the queue', '·', 'Jan 31', '·', '113 MB', '00:00:40', '01:33:33', 'Media player', 'Travis Wins on the Road, Jason Celebrates Shirtless and Full Divisional Round Recap | Ep 75', 'New Heights with Jason and Travis Kelce'].
+
+long_click 308:374.
+Output structure:
+
+    Other Buttons: ['Travis Goes Back to the Super Bowl, Jason on New Eagles Coaches & The Legacy of NFL Blitz | Ep 76', 'Mark as played', 'Remove from Queue', 'Add to Favorites', 'Reset Playback Position', 'Visit Website', 'Share', '9:52', 'Android Setup notification: Finish setting up your sdk_gphone64_x86_64', 'Settings notification: Virtual SD card', 'Wifi signal full.', 'Phone signal full.', 'Battery 100 percent.'].

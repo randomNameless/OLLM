@@ -1,5 +1,0 @@
-Before running action code, 
-install the app and click Allow...
-install the English.apkg file
-click import and load the deck
-then run the action code

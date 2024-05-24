@@ -1,6 +1,0 @@
-click NEXT
-click NEXT
-click NEXT
-click OK, GOT IT!
-input Magic
-click 800:800

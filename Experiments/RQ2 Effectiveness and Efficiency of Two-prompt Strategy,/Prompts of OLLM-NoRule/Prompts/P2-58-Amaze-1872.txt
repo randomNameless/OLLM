@@ -1,0 +1,22 @@
+You will read an app flow, containing page text and actions to reach other pages. Then I will ask you: Is there any logical error, or a bug in the output after the given test sequence? A logic error means the app didn’t provide the expected result after performing actions. Provide your answer with yes or no.  If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision.
+
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options']
+    Other Buttons: ['text: Amaze', 'text: /storage/emulated/0', 'text: 14 folders and 0 files', 'text: Folders', 'text: Alarms', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Android', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: AnkiDroid', 'text: Dec 20, 2023 | 8:18 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Audiobooks', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: DCIM', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Documents', 'text: Dec 20, 2023 | 7:22 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Download', 'text: Feb 8 | 10:18 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Movies', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Music', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'image-button-resource-idcom.amaze.filemanager:id/sd_main_fab'].
+
+click Search.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options']
+    Clickable Buttons: ['text: Type to search…']
+    Other Buttons: ['image-button-resource-idcom.amaze.filemanager:id/sd_main_fab', 'text: Amaze', 'text: /storage/emulated/0', 'text: 14 folders and 0 files', 'image-button-resource-idcom.amaze.filemanager:id/img_view_back', 'image-button-resource-idcom.amaze.filemanager:id/search_close_btn', 'text: Folders', 'text: Alarms', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Android', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: AnkiDroid', 'text: December 20, 2023 | 8:18 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Audiobooks', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: DCIM', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties'].
+
+input com.amaze.filemanager:id/search_edit_text Download.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options']
+    Clickable Buttons: ['text: Download']
+    Other Buttons: ['image-button-resource-idcom.amaze.filemanager:id/sd_main_fab', 'text: Amaze', 'text: /storage/emulated/0', 'text: 14 folders and 0 files', 'image-button-resource-idcom.amaze.filemanager:id/img_view_back', 'image-button-resource-idcom.amaze.filemanager:id/search_close_btn', 'text: Folders', 'text: Alarms', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Android', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: AnkiDroid', 'text: December 20, 2023 | 8:18 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Audiobooks', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: DCIM', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties'].
+
+enter.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options']
+    Other Buttons: ['image-button-resource-idcom.amaze.filemanager:id/sd_main_fab', 'text: Amaze', 'text: Search results of Download', 'text: Files', 'text: Download', 'text: February 15 | 7:36 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties'].

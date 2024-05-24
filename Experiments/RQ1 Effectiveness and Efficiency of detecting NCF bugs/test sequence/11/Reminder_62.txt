@@ -1,6 +1,0 @@
-Before running action code, 
-install the app and click OK
-click Allow
-install the Compressed_Pepper_SketchyMicro_Subdecked.apkg file
-click import and load the deck
-then run the action code

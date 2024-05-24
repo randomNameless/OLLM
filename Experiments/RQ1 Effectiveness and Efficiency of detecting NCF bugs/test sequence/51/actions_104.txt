@@ -1,8 +1,0 @@
-click com.ichi2.anki:id/fab_expand_menu_button
-click com.ichi2.anki:id/add_note_action
-click com.ichi2.anki:id/id_media_button
-click Add image
-click GALLERY
-click Download
-click Photo taken on Feb 8, 2024 9:45:27 AM
-click CROP IMAGE

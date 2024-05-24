@@ -1,0 +1,57 @@
+You will read an Android app sequence, containing actions to reach each page and the text on each page and screenshots of the last page. A logic error means the app didn’t provide the expected result after performing actions. Your task is to determine whether there is a UI error in the screenshot, if there is anything that does not correspond to the text on the page, or if there is a potential discrepancy. You also need to determine whether there’s logical errors. Then I will ask you: Is there any logical error, or a UI error in the output after the given test sequence?
+While you read the flow and answer questions, please read the rules below very carefully and consider them when you provide answers. 
+You should not analyze battery, system time and signal fluctuates in page content and coordinate in actions. This means if you see changes in time, signal, or battery, you should not consider them logic errors or inconsistencies. You should not consider them as input. And your answer should be no.
+You should focus only on analyzing the logic flow without making any feedback or expected behavior predictions. 
+You should not analyze duplicated UI elements. 
+You should not analyze the lack of confirmation messages. 
+You should not analyze unchanged output structure. 
+The rules are irrelevant to the logic flow.
+If you detect error messages, please also check the consistency or correctness of these elements about the provided sequence.
+If you observe redundant or duplicate elements, it counts as a UI error.
+If you observe part of the text, or sentences that are cut off, it means complete statements are truncated. It counts as a UI error.
+Ignore system time and status bar Information and do not analyze. You should focus only on the information for the app itself.
+If the screen is rotated, analyze the text accordingly.
+If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision. Your answer should also be brief and concise.
+
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options']
+    Other Buttons: ['text: Amaze', 'text: /storage/emulated/0', 'text: 14 folders and 0 files', 'text: Folders', 'text: Alarms', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Android', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: AnkiDroid', 'text: Dec 20, 2023 | 8:18 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Audiobooks', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: DCIM', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Documents', 'text: Dec 20, 2023 | 7:22 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Download', 'text: Feb 8 | 10:18 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Movies', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Music', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'image-button-resource-idcom.amaze.filemanager:id/sd_main_fab'].
+
+click Download.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options', 'content-desc: icon', 'content-desc: icon']
+    Other Buttons: ['text: Amaze', 'text: /storage/emulated/0/Download', 'text: 0 folders and 2 files', 'text: Files', 'text: messi.jpg', 'text: Feb 8 | 9:45 AM', 'text: 22.82 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: messi2.jpg', 'text: Feb 8 | 9:43 AM', 'text: 153 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'image-button-resource-idcom.amaze.filemanager:id/sd_main_fab'].
+
+long_click messi.jpg.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options', 'content-desc: icon', 'content-desc: icon', 'content-desc: Done', 'content-desc: Copy', 'content-desc: Delete', 'content-desc: Cut', 'content-desc: More options']
+    Clickable Buttons: ['text: 1']
+    Other Buttons: ['text: Amaze', 'text: /storage/emulated/0/Download', 'text: 0 folders and 2 files', 'text: Files', 'text: messi.jpg', 'text: Feb 8 | 9:45 AM', 'text: 22.82 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: messi2.jpg', 'text: Feb 8 | 9:43 AM', 'text: 153 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties'].
+
+click More options.
+Output structure:
+
+    Other Buttons: ['text: Select All', 'text: Share', 'text: Compress', 'text: Open with', 'text: Hide', 'text: Add Shortcut'].
+
+click Compress.
+Output structure:
+
+    Clickable Buttons: ['text: .zip', 'text: CANCEL', 'text: CREATE']
+    Other Buttons: ['text: Enter Zip Name'].
+
+input com.amaze.filemanager:id/singleedittext_input messi.zip.
+Output structure:
+
+    Clickable Buttons: ['text: messi.zip', 'text: CANCEL', 'text: CREATE']
+    Other Buttons: ['text: Enter Zip Name'].
+
+click CREATE.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options', 'content-desc: icon', 'content-desc: icon']
+    Other Buttons: ['image-button-resource-idcom.amaze.filemanager:id/sd_main_fab', 'text: Amaze', 'text: /storage/emulated/0/Download', 'text: 0 folders and 3 files', 'text: Files', 'text: messi.jpg', 'text: February 8 | 9:45 AM', 'text: 22.82 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: messi.zip', 'text: February 15 | 7:34 AM', 'text: 39 B', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: messi2.jpg', 'text: February 8 | 9:43 AM', 'text: 153 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties'].
+
+click messi.zip.
+Output structure:
+
+    Clickable Buttons: ['text: CANCEL', 'text: VIEW', 'text: EXTRACT']
+    Other Buttons: ['text: Archive', 'text: This is an archive. What action would you like to perform?'].

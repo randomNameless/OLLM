@@ -1,0 +1,9 @@
+click Allow
+click OK
+click Allow
+click Navigate up
+click Help
+click Get Help
+click Send troubleshooting report
+click Cancel
+click Send troubleshooting report

@@ -1,2 +1,0 @@
-
-Yes: After selecting "Sort order" to "Alphabetically, A-Z", the output structure should show "Alphabetically, A-Z" as the selected sort order option instead of "Newest modified date".

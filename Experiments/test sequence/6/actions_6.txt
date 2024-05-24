@@ -1,0 +1,7 @@
+click Open drawer
+click Settings
+click Sort order
+click Alphabetically, A-Z
+back
+click Open drawer
+click Settings

@@ -1,0 +1,68 @@
+
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: Search decks', 'content-desc: More options', 'content-desc: Expand', 'content-desc: Expand', 'content-desc: Expand', 'content-desc: Add']
+    Other Buttons: ['text: AnkiDroid', 'text: 64 cards due (21 min)', 'text: Default', 'text: 7', 'text: 0', 'text: 5', 'text: Fundamental Math Vocabulary: English–Chinese Simplified 基本数学术语', 'text: 20', 'text: 0', 'text: 0', 'text: The Kodansha Kanji Learners Course', 'text: 20', 'text: 7', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: new deck', 'text: 5', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today'].
+
+click com.ichi2.anki:id/fab_expand_menu_button.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: Search decks', 'content-desc: More options', 'content-desc: Expand', 'content-desc: Expand', 'content-desc: Expand', 'content-desc: Create deck', 'content-desc: Get shared decks', 'content-desc: Add', 'content-desc: Add']
+    Other Buttons: ['text: AnkiDroid', 'text: 64 cards due (21 min)', 'text: Default', 'text: 7', 'text: 0', 'text: 5', 'text: Fundamental Math Vocabulary: English–Chinese Simplified 基本数学术语', 'text: 20', 'text: 0', 'text: 0', 'text: The Kodansha Kanji Learners Course', 'text: 20', 'text: 7', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: new deck', 'text: 5', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today', 'text: Create deck', 'text: Get shared decks', 'text: Add'].
+
+click com.ichi2.anki:id/add_deck_action.
+Output structure:
+
+    Clickable Buttons: ['text: CANCEL', 'text: OK']
+    Other Buttons: ['text: Create deck'].
+
+input *Hello (zanki).
+Output structure:
+
+    Clickable Buttons: ['text: *Hello (zanki)', 'text: CANCEL', 'text: OK']
+    Other Buttons: ['text: Create deck'].
+
+click OK.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: Search decks', 'content-desc: More options', 'content-desc: Expand', 'content-desc: Expand', 'content-desc: Expand', 'content-desc: Expand', 'content-desc: Add']
+    Other Buttons: ['text: AnkiDroid', 'text: 64 cards due (21 min)', 'text: *Hello (zanki)', 'text: 0', 'text: 0', 'text: 0', 'text: Default', 'text: 7', 'text: 0', 'text: 5', 'text: Fundamental Math Vocabulary: English–Chinese Simplified 基本数学术语', 'text: 20', 'text: 0', 'text: 0', 'text: The Kodansha Kanji Learners Course', 'text: 20', 'text: 7', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: new deck', 'text: 5', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today'].
+
+click com.ichi2.anki:id/fab_expand_menu_button.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: Search decks', 'content-desc: More options', 'content-desc: Expand', 'content-desc: Expand', 'content-desc: Expand', 'content-desc: Expand', 'content-desc: Create deck', 'content-desc: Get shared decks', 'content-desc: Add', 'content-desc: Add']
+    Other Buttons: ['text: AnkiDroid', 'text: 64 cards due (21 min)', 'text: *Hello (zanki)', 'text: 0', 'text: 0', 'text: 0', 'text: Default', 'text: 7', 'text: 0', 'text: 5', 'text: Fundamental Math Vocabulary: English–Chinese Simplified 基本数学术语', 'text: 20', 'text: 0', 'text: 0', 'text: The Kodansha Kanji Learners Course', 'text: 20', 'text: 7', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: new deck', 'text: 5', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today', 'text: Create deck', 'text: Get shared decks', 'text: Add'].
+
+click com.ichi2.anki:id/add_note_action.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Front', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field']
+    Clickable Buttons: ['text: Cards: Card 1']
+    Other Buttons: ['text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: *Hello (zanki)', 'text: Front', 'text: Back', 'text: Tags: '].
+
+input test.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field']
+    Clickable Buttons: ['text: test', 'text: Cards: Card 1']
+    Other Buttons: ['text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: *Hello (zanki)', 'text: Front', 'text: Back', 'text: Tags: '].
+
+click Save.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Front', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field']
+    Clickable Buttons: ['text: Cards: Card 1']
+    Other Buttons: ['text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: *Hello (zanki)', 'text: Front', 'text: Back', 'text: Tags: '].
+
+click Navigate up.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: Search decks', 'content-desc: More options', 'content-desc: Expand', 'content-desc: Expand', 'content-desc: Expand', 'content-desc: Expand', 'content-desc: Add']
+    Other Buttons: ['text: AnkiDroid', 'text: 65 cards due (22 min)', 'text: *Hello (zanki)', 'text: 1', 'text: 0', 'text: 0', 'text: Default', 'text: 7', 'text: 0', 'text: 5', 'text: Fundamental Math Vocabulary: English–Chinese Simplified 基本数学术语', 'text: 20', 'text: 0', 'text: 0', 'text: The Kodansha Kanji Learners Course', 'text: 20', 'text: 7', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: new deck', 'text: 5', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today'].
+
+click Navigate up.
+Output structure:
+    Long Clickable Buttons: ['text: Decks', 'text: Card browser', 'text: Statistics', 'content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: Search decks', 'content-desc: More options', 'content-desc: Expand', 'content-desc: Expand', 'content-desc: Expand', 'content-desc: Expand', 'content-desc: Add']
+    Clickable Buttons: ['text: OFF']
+    Other Buttons: ['text: Night mode', 'text: Settings', 'text: Help', 'text: Send feedback', 'text: AnkiDroid', 'text: 65 cards due (22 min)', 'text: *Hello (zanki)', 'text: 1', 'text: 0', 'text: 0', 'text: Default', 'text: 7', 'text: 0', 'text: 5', 'text: Fundamental Math Vocabulary: English–Chinese Simplified 基本数学术语', 'text: 20', 'text: 0', 'text: 0', 'text: The Kodansha Kanji Learners Course', 'text: 20', 'text: 7', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: new deck', 'text: 5', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today'].
+
+click Card browser.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Add note', 'content-desc: Search', 'content-desc: More options']
+    Other Buttons: ['text: *Hello (zanki)', 'text: 0 cards shown', 'text: Question', 'text: Answer'].
+
+
+

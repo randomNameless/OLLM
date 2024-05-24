@@ -1,0 +1,45 @@
+
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Sync (log in)', 'content-desc: Search decks', 'content-desc: More options', 'content-desc: Expand', 'content-desc: Add']
+    Other Buttons: ['text: AnkiDroid', 'text: 64 cards due (21 min)', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: Default', 'text: 7', 'text: 0', 'text: 5', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: Fundamental Math Vocabulary: English–Chinese Simplified 基本数学术语', 'text: 20', 'text: 0', 'text: 0', 'text: The Kodansha Kanji Learners Course', 'text: 20', 'text: 7', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: new deck', 'text: 5', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today'].
+
+click com.ichi2.anki:id/fab_expand_menu_button.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Save', 'content-desc: Preview', 'content-desc: Front', 'content-desc: Attach multimedia content to the Front field', 'content-desc: Back', 'content-desc: Attach multimedia content to the Back field']
+    Clickable Buttons: ['text: Cards: Card 1']
+    Other Buttons: ['text: Add note', 'text: Type:', 'text: Basic', 'text: Deck:', 'text: Default', 'text: Front', 'text: Back', 'text: Tags: '].
+
+click com.ichi2.anki:id/id_media_button.
+Output structure:
+
+    Other Buttons: ['text: Add image', 'text: Add audio clip', 'text: Record audio', 'text: Advanced editor'].
+
+click Add image.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Text', 'content-desc: Done', 'content-desc: More options']
+    Clickable Buttons: ['text: GALLERY', 'text: CAMERA']
+    Other Buttons: ['text: Editing field'].
+
+click CAMERA.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Options', 'content-desc: Shutter']
+    Other Buttons: ['content-desc: Options'].
+
+click Shutter.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Retake', 'content-desc: Done', 'content-desc: Cancel'].
+
+click Done.
+Output structure:
+
+    Clickable Buttons: ['text: NO', 'text: OK']
+    Other Buttons: ['text: Do you want to crop this image?'].
+
+click OK.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Text', 'content-desc: Done', 'content-desc: More options']
+    Clickable Buttons: ['text: 145 kB', 'text: GALLERY', 'text: CAMERA', 'text: CROP IMAGE']
+    Other Buttons: ['text: Editing field'].
+
+
+

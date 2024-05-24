@@ -1,8 +1,0 @@
-click *Hello (zanki)
-click com.ichi2.anki:id/fab_expand_menu_button
-click Add
-input Hello
-click com.ichi2.anki:id/action_save
-back
-click Navigate up
-click Card browser

@@ -1,8 +1,0 @@
-click com.automattic.simplenote:id/fab_button
-click com.automattic.simplenote:id/note_content
-input 16-3
-click Navigate up
-click com.automattic.simplenote:id/menu_search
-click Search notes or tags
-input 16-3
-enter

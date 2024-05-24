@@ -1,7 +1,0 @@
-click Navigate up
-click Card browser
-scroll_to Consecutive number
-long_click Consecutive number
-click More options
-click Edit Note
-input com.ichi2.anki:id/id_note_editText testing Consecutive number

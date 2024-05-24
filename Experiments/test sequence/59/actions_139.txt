@@ -1,0 +1,8 @@
+click Download
+long_click messi.jpg
+click More options
+click Compress
+input com.amaze.filemanager:id/singleedittext_input messi.zip
+click CREATE
+click messi.zip
+click EXTRACT

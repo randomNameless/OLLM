@@ -1,0 +1,15 @@
+click Open Drawer
+click Settings
+click Video and audio
+click Default video format
+click WebM
+click Default audio format
+click WebM
+back
+back
+click Search
+input org.schabi.newpipe:id/toolbar_search_edit_text sam sulek
+enter
+click Winter Bulk Day 116 - Chest
+click Download
+click 720p

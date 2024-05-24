@@ -1,0 +1,32 @@
+You will read an app flow, containing page text and actions to reach other pages. Then I will ask you: Is there any logical error, or a bug in the output after the given test sequence? A logic error means the app didn’t provide the expected result after performing actions. Provide your answer with yes or no.  If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision.
+
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Change site icon', 'content-desc: Switch Site', 'content-desc: Stats', 'content-desc: Posts', 'content-desc: Media', 'content-desc: Pages', 'content-desc: Create a post, page or story']
+    Clickable Buttons: ['text: my first', 'text: findmyfirst6.wordpress.com']
+    Other Buttons: ['text: 11:02', 'content-desc: Android Setup notification: sdk_gphone_x86 setup in progress', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.', 'content-desc: My Site', 'text: Stats', 'text: Posts', 'text: Media', 'text: Pages', 'text: Plan', 'text: Free', 'text: Stats', 'text: Activity Log', 'text: Publish', 'text: Blog Posts', 'text: Media', 'text: Site Pages', 'text: Comments', 'text: Look and Feel', 'text: Themes', 'content-desc: My Site. View your site and manage it, including stats.', 'content-desc: My Site. View your site and manage it, including stats.', 'text: My Site', 'content-desc: Reader. Follow content from other sites.', 'content-desc: My Site. View your site and manage it, including stats.', 'text: Reader', 'content-desc: Notifications. Manage your notifications.', 'content-desc: My Site. View your site and manage it, including stats.', 'text: Notifications'].
+
+click Create a post or page.
+Output structure:
+
+    Other Buttons: ['text: 11:02', 'content-desc: Android Setup notification: sdk_gphone_x86 setup in progress', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.', 'text: Add new', 'text: Blog post', 'text: Site page', 'text: Story post'].
+
+click Story post.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Image Thumbnail', 'content-desc: Image Thumbnail', 'content-desc: Play video', 'content-desc: Image Thumbnail', 'content-desc: Play video', 'content-desc: Image Thumbnail', 'content-desc: pick from device', 'content-desc: pick from WordPress media']
+    Other Buttons: ['text: 11:02', 'content-desc: Android Setup notification: sdk_gphone_x86 setup in progress', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.', 'text: Choose media', 'image-button-resource-idorg.wordpress.android:id/wp_stories_take_picture'].
+
+click Create a post or page.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Image Thumbnail', 'content-desc: Image Thumbnail', 'content-desc: Play video', 'content-desc: Image Thumbnail', 'content-desc: Play video', 'content-desc: Image Thumbnail', 'content-desc: Done', 'content-desc: Confirm']
+    Other Buttons: ['text: 11:02', 'content-desc: Android Setup notification: sdk_gphone_x86 setup in progress', 'content-desc: Wifi signal full.', 'content-desc: Phone three bars.', 'content-desc: Battery 100 percent.', 'text: Choose media', 'text: 1 selected'].
+
+click Confirm.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Close', 'content-desc: Next', 'content-desc: Text']
+    Other Buttons: ['content-desc: Slide', 'content-desc: unselected', 'content-desc: selected', 'content-desc: selected', 'content-desc: Slide'].
+
+click Next.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Search', 'content-desc: Sticker Keyboard', 'content-desc: GIF Keyboard', 'content-desc: Clipboard', 'content-desc: More features', 'content-desc: Close features menu', 'content-desc: Voice input', 'content-desc: Q', 'content-desc: W', 'content-desc: E', 'content-desc: R', 'content-desc: T', 'content-desc: Y', 'content-desc: U', 'content-desc: I', 'content-desc: O', 'content-desc: P', 'content-desc: A', 'content-desc: S', 'content-desc: D', 'content-desc: F', 'content-desc: G', 'content-desc: H', 'content-desc: J', 'content-desc: K', 'content-desc: L', 'content-desc: Shift', 'content-desc: Z', 'content-desc: X', 'content-desc: C', 'content-desc: V', 'content-desc: B', 'content-desc: N', 'content-desc: M', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Enter', 'content-desc: Back', 'content-desc: Switch input method', 'content-desc: Home']
+    Clickable Buttons: ['text: Give your story a title', 'text: PUBLISH NOW']
+    Other Buttons: ['text: Publish Date', 'text: Immediately', 'text: Tags', 'text: Not set', 'text: Categories', 'text: Not set'].

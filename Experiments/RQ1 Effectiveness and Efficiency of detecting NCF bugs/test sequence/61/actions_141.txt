@@ -1,8 +1,0 @@
-click Download
-long_click messi.jpg
-click More options
-click Hide
-click More options
-click Hidden Files
-click Delete bookmark
-click CLOSE

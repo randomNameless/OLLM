@@ -1,5 +1,0 @@
-click Allow
-click Navigate up
-click Settings
-click AnkiDroid
-back

@@ -1,0 +1,5 @@
+click Open Drawer
+click About
+click Licenses
+click READ LICENSE
+rotate left

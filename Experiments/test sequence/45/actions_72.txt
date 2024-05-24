@@ -1,0 +1,10 @@
+click new deck
+click SHOW ANSWER
+click Again
+click SHOW ANSWER
+click Again
+click SHOW ANSWER
+click Again
+click Undo
+click Undo
+click Undo

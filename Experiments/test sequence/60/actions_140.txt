@@ -1,0 +1,7 @@
+click Download
+click com.amaze.filemanager:id/search
+input messi.jpg
+enter
+click com.amaze.filemanager:id/search
+input messi2.jpg
+enter

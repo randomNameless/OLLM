@@ -1,6 +1,0 @@
-click Navigate up
-click Card browser
-long_click Algebra
-click com.ichi2.anki:id/action_flag
-click Red flag
-

@@ -1,7 +1,0 @@
-Install Compressed_Pepper_SkechyMicro_Subdecked.apkg in to emulaor
-Open AnkiDroid, click OK, Allow, and the three dots on the top right of the screen
-click import, then select Download, then select Compressed_Pepper_SkechyMicro_Subdecked.apkg
-click ADD
-wait until it finishes importing
-click OK
-then start running the script

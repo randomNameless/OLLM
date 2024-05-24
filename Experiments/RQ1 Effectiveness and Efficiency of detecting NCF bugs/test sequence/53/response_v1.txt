@@ -1,2 +1,0 @@
-
-Yes: After clicking "Select all," the number of selected items changes from '551 cards shown' to '508', indicating that not all cards visible before the action were selected. This suggests a logical error, as the expectation after selecting all would be that all 551 cards are selected, not reducing the visible count to 508 without explanation.

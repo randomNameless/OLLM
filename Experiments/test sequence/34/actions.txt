@@ -1,0 +1,15 @@
+click NEXT
+click NEXT
+click NEXT
+click OK, GOT IT!
+click More options
+click Settings
+click Search
+click Google
+click + Add another search engine
+click 56:426
+input Test
+click 56:650
+input 11
+click Learn more
+back

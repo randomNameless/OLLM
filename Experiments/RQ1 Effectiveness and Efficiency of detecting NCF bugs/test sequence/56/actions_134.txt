@@ -1,4 +1,0 @@
-click Amaze
-click Allow
-rotate left
-back

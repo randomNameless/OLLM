@@ -1,0 +1,25 @@
+click com.automattic.simplenote:id/fab_button
+click com.automattic.simplenote:id/menu_checklist
+click com.automattic.simplenote:id/note_content
+input simplest
+enter
+input simplest
+enter
+input simplest
+enter
+input simplest
+enter
+input simplest
+enter
+input simplest
+enter
+input simplest
+enter
+input simplest
+enter
+click Navigate up
+click com.automattic.simplenote:id/menu_search
+click Search notes or tags
+input simplest
+enter
+click com.automattic.simplenote:id/note_title

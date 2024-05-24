@@ -1,0 +1,32 @@
+
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options']
+    Other Buttons: ['text: Amaze', 'text: /storage/emulated/0', 'text: 14 folders and 0 files', 'text: Folders', 'text: Alarms', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Android', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: AnkiDroid', 'text: Dec 20, 2023 | 8:18 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Audiobooks', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: DCIM', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Documents', 'text: Dec 20, 2023 | 7:22 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Download', 'text: Feb 8 | 10:18 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Movies', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Music', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'image-button-resource-idcom.amaze.filemanager:id/sd_main_fab'].
+
+click Navigate up.
+Output structure:
+    Long Clickable Buttons: ['text: Internal Storage', 'text: 1BEC-3C18', 'text: DCIM', 'text: Download', 'text: Movies', 'text: Music', 'text: Pictures', 'text: Quick access', 'text: Recent files', 'text: Images', 'text: Videos', 'text: Audio', 'text: Documents', 'text: APKs', 'content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options']
+    Other Buttons: ['image-button-resource-idcom.amaze.filemanager:id/imageButton', 'image-button-resource-idcom.amaze.filemanager:id/imageButton', 'image-button-resource-idcom.amaze.filemanager:id/imageButton', 'image-button-resource-idcom.amaze.filemanager:id/imageButton', 'image-button-resource-idcom.amaze.filemanager:id/imageButton', 'image-button-resource-idcom.amaze.filemanager:id/imageButton', 'image-button-resource-idcom.amaze.filemanager:id/imageButton', 'image-button-resource-idcom.amaze.filemanager:id/sd_main_fab', 'text: Amaze', 'text: /sdcard', 'text: 14 folders and 0 files', 'text: Folders', 'text: Alarms', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Android', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: AnkiDroid', 'text: December 20, 2023 | 8:18 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Audiobooks', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: DCIM', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Documents', 'text: December 20, 2023 | 7:22 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Download', 'text: February 15 | 7:36 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Movies', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Music', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties'].
+
+click Documents.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options']
+    Other Buttons: ['image-button-resource-idcom.amaze.filemanager:id/sd_main_fab', 'text: Amaze', 'text: Documents', 'text: 0 folders and 0 files', 'text: No Files'].
+
+click com.amaze.filemanager:id/sd_main_fab.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options']
+    Other Buttons: ['text: Folder', 'image-button-resource-idcom.amaze.filemanager:id/sd_fab', 'text: File', 'image-button-resource-idcom.amaze.filemanager:id/sd_fab', 'text: Cloud Connection', 'image-button-resource-idcom.amaze.filemanager:id/sd_fab', 'image-button-resource-idcom.amaze.filemanager:id/sd_main_fab', 'text: Amaze', 'text: Documents', 'text: 0 folders and 0 files', 'text: No Files'].
+
+click File.
+Output structure:
+
+    Clickable Buttons: ['text: .txt', 'text: CANCEL', 'text: CREATE']
+    Other Buttons: ['text: New File', 'text: The created file will be hidden in the file list.'].
+
+input com.amaze.filemanager:id/singleedittext_input hello.txt.
+Output structure:
+
+    Clickable Buttons: ['text: hello.txt', 'text: CANCEL', 'text: CREATE']
+    Other Buttons: ['text: New File'].
+

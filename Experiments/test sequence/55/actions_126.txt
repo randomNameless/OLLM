@@ -1,0 +1,5 @@
+click Download
+click com.amaze.filemanager:id/properties
+click Rename
+input com.amaze.filemanager:id/singleedittext_input messi 19 99.jpg
+click SAVE

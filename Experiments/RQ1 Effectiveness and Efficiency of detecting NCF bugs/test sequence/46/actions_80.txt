@@ -1,6 +1,0 @@
-click new deck
-click More options
-click Enable whiteboard
-swipe 700:500:700:1500
-click Undo
-swipe 700:500:700:1500

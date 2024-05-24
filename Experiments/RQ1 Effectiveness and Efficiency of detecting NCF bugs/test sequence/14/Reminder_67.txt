@@ -1,5 +1,0 @@
-Install 1h29m.colpg in to emulaor
-Open AnkiDroid, click Allow, OK, Allow, and the three dots on the top right of the screen
-click import, then select Download, then select 1h29m.colpg
-click Replace
-then start running the script

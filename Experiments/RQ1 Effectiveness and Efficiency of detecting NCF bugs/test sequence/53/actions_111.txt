@@ -1,7 +1,0 @@
-click Navigate up
-click Card browser
-long_click Algebra
-click More options
-click Select all
-
-

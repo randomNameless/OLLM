@@ -1,0 +1,10 @@
+click Navigate up
+click Settings
+click AnkiDroid
+click Language
+scroll_to 日本語
+click 日本語
+click 前に戻る
+click カードブラウザ
+long_click q1
+click その他のオプション

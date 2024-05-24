@@ -1,0 +1,54 @@
+
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Open drawer', 'content-desc: Search Notes or Tags', 'content-desc: New Note']
+    Other Buttons: ['text: All Notes', 'text: Create your first note', 'text: 7:45', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click com.automattic.simplenote:id/fab_button.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Toggle Checklist', 'content-desc: Information', 'content-desc: More Options']
+    Clickable Buttons: ['text: Add tag…']
+    Other Buttons: ['text: 7:45', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click com.automattic.simplenote:id/note_content.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Open features menu', 'content-desc: Voice input', 'content-desc: Q', 'content-desc: W', 'content-desc: E', 'content-desc: R', 'content-desc: T', 'content-desc: Y', 'content-desc: U', 'content-desc: I', 'content-desc: O', 'content-desc: P', 'content-desc: A', 'content-desc: S', 'content-desc: D', 'content-desc: F', 'content-desc: G', 'content-desc: H', 'content-desc: J', 'content-desc: K', 'content-desc: L', 'content-desc: Shift', 'content-desc: Z', 'content-desc: X', 'content-desc: C', 'content-desc: V', 'content-desc: B', 'content-desc: N', 'content-desc: M', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Enter', 'content-desc: Back', 'content-desc: Switch input method', 'content-desc: Navigate up', 'content-desc: Toggle Checklist', 'content-desc: Information', 'content-desc: More Options']
+    Clickable Buttons: ['text: Add tag…']
+    Other Buttons: ['text: click com.automattic.simplenote:id/tag_input', 'text: 7:45', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+input 16-3.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Open features menu', 'content-desc: Voice input', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Enter', 'content-desc: Back', 'content-desc: Switch input method', 'content-desc: Navigate up', 'content-desc: Toggle Checklist', 'content-desc: Information', 'content-desc: More Options']
+    Clickable Buttons: ['text: 16-3', 'text: Add tag…']
+    Other Buttons: ['text: click com.automattic.simplenote:id/tag_input', 'text: 7:45', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click Navigate up.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Open drawer', 'content-desc: Search Notes or Tags', 'content-desc: New Note']
+    Other Buttons: ['text: All Notes', 'text: 16-3', 'text: 7:45', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click com.automattic.simplenote:id/menu_search.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Open features menu', 'content-desc: Voice input', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Search', 'content-desc: Back', 'content-desc: Switch input method', 'content-desc: Collapse', 'content-desc: Delete item', 'content-desc: Delete item', 'content-desc: Sort']
+    Clickable Buttons: ['text: Search notes or tags']
+    Other Buttons: ['text: click com.automattic.simplenote:id/tag_input', 'text: very_loooooooooooooooooooooooooooooooooooooooooo', 'text: short_search', 'text: Modified', 'content-desc: Down', 'text: 16-3', 'text: 02/08/2024', 'text: 7:45', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+click Search notes or tags.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Open features menu', 'content-desc: Voice input', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Search', 'content-desc: Back', 'content-desc: Switch input method', 'content-desc: Collapse', 'content-desc: Delete item', 'content-desc: Delete item', 'content-desc: Sort']
+    Clickable Buttons: ['text: Search notes or tags']
+    Other Buttons: ['text: click com.automattic.simplenote:id/tag_input', 'text: very_loooooooooooooooooooooooooooooooooooooooooo', 'text: short_search', 'text: Modified', 'content-desc: Down', 'text: 16-3', 'text: 02/08/2024', 'text: 7:45', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+input 16-3.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Open features menu', 'content-desc: Voice input', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Search', 'content-desc: Back', 'content-desc: Switch input method', 'content-desc: Collapse', 'content-desc: Clear query', 'content-desc: Sort']
+    Clickable Buttons: ['text: 16-3']
+    Other Buttons: ['text: click com.automattic.simplenote:id/tag_input', 'text: 16-3', 'text: Modified', 'content-desc: Down', 'text: 16-3', 'text: 02/08/2024', 'text: 7:45', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+enter.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Open features menu', 'content-desc: Voice input', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Search', 'content-desc: Back', 'content-desc: Switch input method', 'content-desc: Collapse', 'content-desc: Clear query']
+    Clickable Buttons: ['text: 16-3', 'text: Create a new note titled "16-3"']
+    Other Buttons: ['text: click com.automattic.simplenote:id/tag_input', 'text: No notes found', 'text: 7:46', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Digital Wellbeing notification: Need time to focus?', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone signal full.', 'content-desc: Battery 100 percent.'].
+
+
+

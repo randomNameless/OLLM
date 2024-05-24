@@ -1,6 +1,0 @@
-click Open Drawer
-click Settings
-click Content
-scroll_to Export database
-click Export database
-click ..

@@ -1,8 +1,0 @@
-click Sketchy Micro
-back
-click Navigate up
-click Card browser
-click More options
-click Filter by tag
-click #SketchyMicro::Bacteria::(01)-Gram_(+)_Cocci::1.3-Strep_Pyogenes
-click SELECT

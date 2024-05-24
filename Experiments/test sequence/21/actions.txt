@@ -1,0 +1,4 @@
+long_click Default
+click Export deck
+click 182:1571
+click OK

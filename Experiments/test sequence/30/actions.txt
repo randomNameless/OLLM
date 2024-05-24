@@ -1,0 +1,13 @@
+click NEXT
+click NEXT
+click NEXT
+click OK, GOT IT!
+click More options
+click Settings
+click Privacy & Security
+swipe 42:1067:42:293
+back
+click Language
+click Afrikaans
+click  	Privaatheid en sekuriteit
+swipe 42:1067:42:293

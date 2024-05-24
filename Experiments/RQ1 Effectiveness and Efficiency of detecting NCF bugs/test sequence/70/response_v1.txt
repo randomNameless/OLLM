@@ -1,3 +1,0 @@
-
-Yes
-Reason: The sequence shows navigating back to "Site Pages" after creating a draft, and then moving to "DRAFTS" where the new draft is visible and accessible, indicating successful creation and saving of the draft. However, the draft's presence and the details provided when it's selected for editing ("Title of third page" and "My story") confirm the actions taken were correctly executed and recorded, showcasing an expected and consistent logical flow in the application's functionality regarding draft creation, navigation, and editing

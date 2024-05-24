@@ -1,0 +1,25 @@
+
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Search', 'content-desc: Voice search', 'content-desc: Google Lens']
+    Clickable Buttons: ['text: Amaze', 'text: AnkiDroid', 'text: Calendar', 'text: Camera', 'text: Chrome', 'text: Clock', 'text: Contacts', 'text: Drive', 'text: Files', 'text: Gmail', 'text: Google', 'text: Maps', 'text: Messages', 'text: NewPipe', 'text: Phone', 'text: Photos', 'text: Play Store', 'text: Settings', 'text: Simplenote', 'text: TMoble', 'text: WordPress', 'text: YouTube', 'text: YT Music', 'text: Search apps, web and more']
+    Other Buttons: ['content-desc: Home'].
+
+click Amaze.
+Output structure:
+
+    Clickable Buttons: ['text: Allow', 'text: Don’t allow']
+    Other Buttons: ['text: Allow Amaze to access photos, videos, music, audio, and other files on this device?'].
+
+click Allow.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options']
+    Other Buttons: ['image-button-resource-idcom.amaze.filemanager:id/sd_main_fab', 'text: Amaze', 'text: /storage/emulated/0', 'text: 14 folders and 0 files', 'text: Folders', 'text: Alarms', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Android', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: AnkiDroid', 'text: December 20, 2023 | 8:18 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Audiobooks', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: DCIM', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Documents', 'text: December 20, 2023 | 7:22 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Download', 'text: February 15 | 7:36 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Movies', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Music', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties'].
+
+rotate left.
+Output structure:
+    Long Clickable Buttons: ['text: Internal Storage', 'text: 1BEC-3C18', 'text: DCIM', 'text: Download', 'content-desc: Search', 'content-desc: Home', 'content-desc: Sort', 'content-desc: History', 'content-desc: More options']
+    Other Buttons: ['image-button-resource-idcom.amaze.filemanager:id/imageButton', 'image-button-resource-idcom.amaze.filemanager:id/imageButton', 'image-button-resource-idcom.amaze.filemanager:id/imageButton', 'image-button-resource-idcom.amaze.filemanager:id/imageButton', 'image-button-resource-idcom.amaze.filemanager:id/sd_main_fab', 'text: Amaze', 'text: /storage/emulated/0', 'text: 14 folders and 0 files', 'text: Folders', 'text: Alarms', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Android', 'text: December 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: AnkiDroid', 'text: December 20, 2023 | 8:18 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties'].
+
+
+
+

@@ -1,5 +1,0 @@
-click AnkiDroid
-click 08 Mycobacteria
-click 0:2784
-click Again
-back

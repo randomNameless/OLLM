@@ -1,0 +1,20 @@
+You will read an app flow, containing page text and actions to reach other pages. Then I will ask you: Is there any logical error, or a bug in the output after the given test sequence? A logic error means the app didn’t provide the expected result after performing actions. Provide your answer with yes or no.  If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision.
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Synchronization', 'content-desc: More options', 'content-desc: Expand', 'content-desc: Add']
+    Other Buttons: ['text: AnkiDroid', 'text: 55 cards due (0 min)', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: Default', 'text: 0', 'text: 0', 'text: 5', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: Fundamental Math Vocabulary: English–Chinese Simplified 基本数学术语', 'text: 20', 'text: 0', 'text: 0', 'text: The Kodansha Kanji Learners Course', 'text: 20', 'text: 7', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: new deck', 'text: 2', 'text: 0', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: test', 'text: 1', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today'].
+
+click new deck.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Undo', 'content-desc: Mark note', 'content-desc: More options']
+    Other Buttons: ['text: new deck', 'text: 0 minutes left', 'text: 2', 'text: 0', 'text: 0', 'text: SHOW ANSWER'].
+
+back.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Synchronization', 'content-desc: More options', 'content-desc: Expand', 'content-desc: Add']
+    Other Buttons: ['text: AnkiDroid', 'text: 55 cards due (0 min)', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: Default', 'text: 0', 'text: 0', 'text: 5', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: Fundamental Math Vocabulary: English–Chinese Simplified 基本数学术语', 'text: 20', 'text: 0', 'text: 0', 'text: The Kodansha Kanji Learners Course', 'text: 20', 'text: 7', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: new deck', 'text: 2', 'text: 0', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: test', 'text: 1', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today'].
+
+click Navigate up.
+Output structure:
+    Long Clickable Buttons: ['text: Decks', 'text: Card browser', 'text: Statistics', 'content-desc: Navigate up', 'content-desc: Synchronization', 'content-desc: More options', 'content-desc: Expand', 'content-desc: Add']
+    Clickable Buttons: ['text: OFF']
+    Other Buttons: ['text: Night mode', 'text: Settings', 'text: Help', 'text: Send feedback', 'text: AnkiDroid', 'text: 55 cards due (0 min)', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: Default', 'text: 0', 'text: 0', 'text: 5', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: Fundamental Math Vocabulary: English–Chinese Simplified 基本数学术语', 'text: 20', 'text: 0', 'text: 0', 'text: The Kodansha Kanji Learners Course', 'text: 20', 'text: 7', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: new deck', 'text: 2', 'text: 0', 'text: 0', 'image-button-resource-idcom.ichi2.anki:id/deckpicker_expander', 'text: test', 'text: 1', 'text: 0', 'text: 0', 'text: Studied 0 cards in 0 minutes today'].

@@ -1,0 +1,39 @@
+You will read an app flow, containing page text and actions to reach other pages. Then I will ask you: Is there any logical error, or a bug in the output after the given test sequence? A logic error means the app didn’t provide the expected result after performing actions. Provide your answer with yes or no.  If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision.
+
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options']
+    Other Buttons: ['text: Amaze', 'text: /storage/emulated/0', 'text: 14 folders and 0 files', 'text: Folders', 'text: Alarms', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Android', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: AnkiDroid', 'text: Dec 20, 2023 | 8:18 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Audiobooks', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: DCIM', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Documents', 'text: Dec 20, 2023 | 7:22 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Download', 'text: Feb 8 | 10:18 AM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Movies', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: Music', 'text: Dec 14, 2023 | 3:46 PM', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'image-button-resource-idcom.amaze.filemanager:id/sd_main_fab'].
+
+click Download.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options', 'content-desc: icon', 'content-desc: icon']
+    Other Buttons: ['text: Amaze', 'text: /storage/emulated/0/Download', 'text: 0 folders and 2 files', 'text: Files', 'text: messi.jpg', 'text: Feb 8 | 9:45 AM', 'text: 22.82 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: messi2.jpg', 'text: Feb 8 | 9:43 AM', 'text: 153 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'image-button-resource-idcom.amaze.filemanager:id/sd_main_fab'].
+
+click com.amaze.filemanager:id/search.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options', 'content-desc: icon', 'content-desc: icon']
+    Clickable Buttons: ['text: Type to search…']
+    Other Buttons: ['text: Amaze', 'text: /storage/emulated/0/Download', 'text: 0 folders and 2 files', 'image-button-resource-idcom.amaze.filemanager:id/img_view_back', 'image-button-resource-idcom.amaze.filemanager:id/search_close_btn', 'text: Files', 'text: messi.jpg', 'text: Feb 8 | 9:45 AM', 'text: 22.82 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: messi2.jpg', 'text: Feb 8 | 9:43 AM', 'text: 153 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'image-button-resource-idcom.amaze.filemanager:id/sd_main_fab'].
+
+input messi.jpg.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options', 'content-desc: icon', 'content-desc: icon']
+    Clickable Buttons: ['text: messi.jpg']
+    Other Buttons: ['text: Amaze', 'text: /storage/emulated/0/Download', 'text: 0 folders and 2 files', 'image-button-resource-idcom.amaze.filemanager:id/img_view_back', 'image-button-resource-idcom.amaze.filemanager:id/search_close_btn', 'text: Files', 'text: messi.jpg', 'text: Feb 8 | 9:45 AM', 'text: 22.82 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'text: messi2.jpg', 'text: Feb 8 | 9:43 AM', 'text: 153 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'image-button-resource-idcom.amaze.filemanager:id/sd_main_fab'].
+
+enter.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options', 'content-desc: icon']
+    Other Buttons: ['text: Amaze', 'text: Search results of messi.jpg', 'text: Files', 'text: messi.jpg', 'text: Feb 8 | 9:45 AM', 'text: 22.82 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'image-button-resource-idcom.amaze.filemanager:id/sd_main_fab'].
+
+click com.amaze.filemanager:id/search.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options', 'content-desc: icon']
+    Clickable Buttons: ['text: Type to search…']
+    Other Buttons: ['text: Amaze', 'text: Search results of messi.jpg', 'image-button-resource-idcom.amaze.filemanager:id/img_view_back', 'image-button-resource-idcom.amaze.filemanager:id/search_close_btn', 'text: Files', 'text: messi.jpg', 'text: Feb 8 | 9:45 AM', 'text: 22.82 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'image-button-resource-idcom.amaze.filemanager:id/sd_main_fab'].
+
+input messi2.jpg.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Navigate up', 'content-desc: Search', 'content-desc: Home', 'content-desc: More options', 'content-desc: icon']
+    Clickable Buttons: ['text: messi2.jpg']
+    Other Buttons: ['text: Amaze', 'text: Search results of messi.jpg', 'image-button-resource-idcom.amaze.filemanager:id/img_view_back', 'image-button-resource-idcom.amaze.filemanager:id/search_close_btn', 'text: Files', 'text: messi.jpg', 'text: Feb 8 | 9:45 AM', 'text: 22.82 kB', 'image-button-resource-idcom.amaze.filemanager:id/properties', 'image-button-resource-idcom.amaze.filemanager:id/sd_main_fab'].

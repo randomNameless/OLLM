@@ -1,9 +1,0 @@
-click Allow
-click Allow
-click com.ichi2.anki:id/action_sync
-click LOG IN
-click Email address
-input jubn@mail.uc.edu
-click Password
-input test
-click LOG IN

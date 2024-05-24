@@ -1,8 +1,0 @@
-click NEXT
-click NEXT
-click NEXT
-click OK, GOT IT!
-click More options button
-click Settings
-click General
-click Make Firefox Focus default browser

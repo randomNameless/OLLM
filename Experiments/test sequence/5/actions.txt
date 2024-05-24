@@ -1,0 +1,32 @@
+click OK
+click Allow
+click com.ichi2.anki:id/fab_expand_menu_button
+click com.ichi2.anki:id/add_deck_action
+input deck1
+click OK
+click deck1
+click com.ichi2.anki:id/fab_expand_menu_button
+click com.ichi2.anki:id/add_note_action
+input 1
+click com.ichi2.anki:id/action_save
+input 2
+click com.ichi2.anki:id/action_save
+back
+click 0:84
+click Navigate up
+click 0:84
+click Settings
+click AnkiDroid
+click Language
+click español (España)
+click Desplazarse hacia arriba
+click Configuración
+click Gestos
+click Habilitar gestos
+click Deslizar hacia arriba
+swipe 100:2510:100:326
+click Enterrar nota
+back
+back
+click deck1
+swipe 100:2510:100:326

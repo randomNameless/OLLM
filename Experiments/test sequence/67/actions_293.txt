@@ -1,0 +1,6 @@
+click Create a post or page
+click Story post
+click Create a post or page
+click Confirm
+click Next
+click Categories

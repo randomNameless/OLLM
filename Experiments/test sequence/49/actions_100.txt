@@ -1,0 +1,2 @@
+click Default
+click SHOW ANSWER

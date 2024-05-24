@@ -1,0 +1,94 @@
+You will read an app flow, containing page text and actions to reach other pages. Then I will ask you: Is there any logical error, or a bug in the output after the given test sequence? A logic error means the app didn’t provide the expected result after performing actions. Provide your answer with yes or no.  If your answer is yes, please also provide the reason. The reason should be brief and concise. If you didn't detect any error, please answer no. Finally, provide your final decision.
+
+Initial structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: NEXT', 'text: SKIP']
+    Other Buttons: ['content-desc: Power up your privacyTake private browsing to the next level. Block ads and other content that can track you across sites and bog down page load times.', 'text: Power up your privacy', 'text: Take private browsing to the next level. Block ads and other content that can track you across sites and bog down page load times.', 'text: 12:13', 'content-desc: Android Setup notification: Finish setting up your AOSP on IA Emulator', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Google Play Store notification: Google Play Protect is turned on', 'content-desc: ATX notification: UIAutomator', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click NEXT.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: NEXT', 'text: SKIP']
+    Other Buttons: ['content-desc: Your search, your waySearching for something different? Choose another default search engine in Settings.', 'text: Your search, your way', 'text: Searching for something different? Choose another default search engine in Settings.', 'text: 12:13', 'content-desc: Android Setup notification: Finish setting up your AOSP on IA Emulator', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Google Play Store notification: Google Play Protect is turned on', 'content-desc: ATX notification: UIAutomator', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click NEXT.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: NEXT', 'text: SKIP']
+    Other Buttons: ['content-desc: Add shortcuts to your home screenReturn to your favorite sites in Firefox Focus quickly. Just select "Add to Home screen" from the Firefox Focus menu.', 'text: Add shortcuts to your home screen', 'text: Return to your favorite sites in Firefox Focus quickly. Just select "Add to Home screen" from the Firefox Focus menu.', 'text: 12:13', 'content-desc: Android Setup notification: Finish setting up your AOSP on IA Emulator', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Google Play Store notification: Google Play Protect is turned on', 'content-desc: ATX notification: UIAutomator', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click NEXT.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Clickable Buttons: ['text: OK, GOT IT!', 'text: SKIP']
+    Other Buttons: ['content-desc: Make privacy a habitSet Firefox Focus as your default browser and get the benefits of private browsing when you open webpages from other apps.', 'text: Make privacy a habit', 'text: Set Firefox Focus as your default browser and get the benefits of private browsing when you open webpages from other apps.', 'text: 12:13', 'content-desc: Android Setup notification: Finish setting up your AOSP on IA Emulator', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Google Play Store notification: Google Play Protect is turned on', 'content-desc: ATX notification: UIAutomator', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click OK, GOT IT!.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Switch input method', 'content-desc: Home', 'content-desc: Suggest contacts? Tap for info.', 'content-desc: Open features menu', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: /', 'content-desc: Emoji button', 'content-desc: Space', 'content-desc: .', 'content-desc: Go', 'content-desc: More options']
+    Clickable Buttons: ['text: Search or enter address', 'text: Automatic private browsing.\nBrowse. Erase. Repeat.']
+    Other Buttons: ['content-desc: Firefox Focus', 'text: 12:13', 'content-desc: Android Setup notification: Finish setting up your AOSP on IA Emulator', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Google Play Store notification: Google Play Protect is turned on', 'content-desc: ATX notification: UIAutomator', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click More options.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Switch input method', 'content-desc: Home', 'content-desc: 1', 'content-desc: 2', 'content-desc: 3', 'content-desc: 4', 'content-desc: 5', 'content-desc: 6', 'content-desc: 7', 'content-desc: 8', 'content-desc: 9', 'content-desc: 0', 'content-desc: q', 'content-desc: w', 'content-desc: e', 'content-desc: r', 'content-desc: t', 'content-desc: y', 'content-desc: u', 'content-desc: i', 'content-desc: o', 'content-desc: p', 'content-desc: a', 'content-desc: s', 'content-desc: d', 'content-desc: f', 'content-desc: g', 'content-desc: h', 'content-desc: j', 'content-desc: k', 'content-desc: l', 'content-desc: Shift', 'content-desc: z', 'content-desc: x', 'content-desc: c', 'content-desc: v', 'content-desc: b', 'content-desc: n', 'content-desc: m', 'content-desc: Delete', 'content-desc: Symbol keyboard', 'content-desc: ,', 'content-desc: Space', 'content-desc: .', 'content-desc: Enter']
+    Clickable Buttons: ['text: Help', 'text: Settings']
+    Other Buttons: ["text: What's New", 'text: 12:13', 'content-desc: Android Setup notification: Finish setting up your AOSP on IA Emulator', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Google Play Store notification: Google Play Protect is turned on', 'content-desc: ATX notification: UIAutomator', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click Settings.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'text: OFF']
+    Other Buttons: ['text: 12:13', 'content-desc: Android Setup notification: Finish setting up your AOSP on IA Emulator', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Google Play Store notification: Google Play Protect is turned on', 'content-desc: ATX notification: UIAutomator', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.', 'text: Settings', 'text: Language', 'text: System default', 'text: Privacy & Security', 'text: Tracking, cookies, data choices', 'text: Search', 'text: Set default, autocomplete', 'text: Make Firefox Focus default browser', 'text: Mozilla', 'text: About Firefox Focus, help'].
+
+click Search.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'text: OFF']
+    Clickable Buttons: ['text: Learn more']
+    Other Buttons: ['text: 12:13', 'content-desc: Android Setup notification: Finish setting up your AOSP on IA Emulator', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Google Play Store notification: Google Play Protect is turned on', 'content-desc: ATX notification: UIAutomator', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.', 'text: Search', 'text: Google', 'text: Default', 'text: Get search suggestions', 'text: Firefox Focus will send what you type in the address bar to your search engine', 'text: URL Autocomplete', 'text: On'].
+
+click Default.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: More options']
+    Clickable Buttons: ['text: Amazon.com', 'text: DuckDuckGo', 'text: Google', 'text: Twitter', 'text: Wikipedia']
+    Other Buttons: ['text: 12:13', 'content-desc: Android Setup notification: Finish setting up your AOSP on IA Emulator', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Google Play Store notification: Google Play Protect is turned on', 'content-desc: ATX notification: UIAutomator', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.', 'text: Installed search engines', 'text: + Add another search engine'].
+
+click Wikipedia.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: More options']
+    Clickable Buttons: ['text: Amazon.com', 'text: DuckDuckGo', 'text: Google', 'text: Twitter', 'text: Wikipedia']
+    Other Buttons: ['text: 12:13', 'content-desc: Android Setup notification: Finish setting up your AOSP on IA Emulator', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Google Play Store notification: Google Play Protect is turned on', 'content-desc: ATX notification: UIAutomator', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.', 'text: Installed search engines', 'text: + Add another search engine'].
+
+back.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'text: OFF']
+    Clickable Buttons: ['text: Learn more']
+    Other Buttons: ['text: 12:13', 'content-desc: Android Setup notification: Finish setting up your AOSP on IA Emulator', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Google Play Store notification: Google Play Protect is turned on', 'content-desc: ATX notification: UIAutomator', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.', 'text: Search', 'text: Wikipedia', 'text: Default', 'text: Get search suggestions', 'text: Firefox Focus will send what you type in the address bar to your search engine', 'text: URL Autocomplete', 'text: On'].
+
+click Default.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: More options']
+    Clickable Buttons: ['text: Amazon.com', 'text: DuckDuckGo', 'text: Google', 'text: Twitter', 'text: Wikipedia']
+    Other Buttons: ['text: 12:13', 'content-desc: Android Setup notification: Finish setting up your AOSP on IA Emulator', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Google Play Store notification: Google Play Protect is turned on', 'content-desc: ATX notification: UIAutomator', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.', 'text: Installed search engines', 'text: + Add another search engine'].
+
+click More options.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home']
+    Other Buttons: ['text: Remove', 'text: Restore default search engines', 'text: 12:13', 'content-desc: Android Setup notification: Finish setting up your AOSP on IA Emulator', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Google Play Store notification: Google Play Protect is turned on', 'content-desc: ATX notification: UIAutomator', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.'].
+
+click Remove.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Remove', 'text: Wikipedia']
+    Clickable Buttons: ['text: Amazon.com', 'text: DuckDuckGo', 'text: Google', 'text: Twitter']
+    Other Buttons: ['text: 12:13', 'content-desc: Android Setup notification: Finish setting up your AOSP on IA Emulator', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Google Play Store notification: Google Play Protect is turned on', 'content-desc: ATX notification: UIAutomator', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.', 'text: Remove search engines'].
+
+click Amazon.com.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: Remove', 'text: Wikipedia']
+    Clickable Buttons: ['text: Amazon.com', 'text: DuckDuckGo', 'text: Google', 'text: Twitter']
+    Other Buttons: ['text: 12:13', 'content-desc: Android Setup notification: Finish setting up your AOSP on IA Emulator', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Google Play Store notification: Google Play Protect is turned on', 'content-desc: ATX notification: UIAutomator', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.', 'text: Remove search engines'].
+
+click Remove.
+Output structure:
+    Long Clickable Buttons: ['content-desc: Back', 'content-desc: Overview', 'content-desc: Home', 'content-desc: Navigate up', 'content-desc: More options']
+    Clickable Buttons: ['text: DuckDuckGo', 'text: Google', 'text: Twitter', 'text: Wikipedia']
+    Other Buttons: ['text: 12:13', 'content-desc: Android Setup notification: Finish setting up your AOSP on IA Emulator', 'content-desc: Android System notification: Configure physical keyboard', 'content-desc: Google Play Store notification: Google Play Protect is turned on', 'content-desc: ATX notification: UIAutomator', 'content-desc: Settings notification: Virtual SD card', 'content-desc: Wifi signal full.', 'content-desc: Phone two bars.', 'content-desc: Battery 100 percent.', 'text: Installed search engines', 'text: + Add another search engine'].

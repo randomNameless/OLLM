@@ -1,3 +1,0 @@
-click Stats
-click DAYS
-scroll_to Search Terms

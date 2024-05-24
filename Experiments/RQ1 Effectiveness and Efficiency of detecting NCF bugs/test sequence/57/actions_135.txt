@@ -1,7 +1,0 @@
-click Navigate up
-click Documents
-click com.amaze.filemanager:id/sd_main_fab
-click File
-input com.amaze.filemanager:id/singleedittext_input hello.txt
-click CREATE
-
