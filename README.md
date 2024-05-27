@@ -51,6 +51,7 @@ The action text can either be defined by the human tester or by an automatic seq
 
 ## Text Sequence Generation Tool
 * The text sequence generation tool used in the paper can automatically browse the app and generate text sequences in the desired format (action+ GUI text extraction).
+* Download the tool: https://drive.google.com/file/d/1_rtSx0uVhh9QeOkyAXSCrPqqpPmDxh_5/view?usp=sharing
 
 ## How to Run Text Sequence Generation Tool:
 * Extract the zip file
