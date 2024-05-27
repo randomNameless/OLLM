@@ -50,12 +50,12 @@ The action text can either be defined by the human tester or by an automatic seq
 * For each experiment, there's a folder containing the prompts (for example, ./Experiments/RQ1 Effectiveness and Efficiency of detecting NCF bugs/Prompt of TP/Prompts) and a folder containing the LLM responses(./Experiments/RQ1 Effectiveness and Efficiency of detecting NCF bugs/Prompt of TP/LLM response).
 
 ## Text Sequence Generation Tool
-*The text sequence generation tool used in the paper can automatically browse the app and generate text sequences in the desired format (action+ GUI text extraction).
+* The text sequence generation tool used in the paper can automatically browse the app and generate text sequences in the desired format (action+ GUI text extraction).
 
 ## How to Run Text Sequence Generation Tool:
-*Extract the zip file
-*Put the APK file in dataset/unfinished folder
-*In the folder, run 
+* Extract the zip file
+* Put the APK file in dataset/unfinished folder
+* In the folder, run 
 ```sh
 python2 ./RunTest.py
 ```
