@@ -55,8 +55,21 @@ The action text can either be defined by the human tester or by an automatic seq
 
 ## How to Run Text Sequence Generation Tool:
 * Extract the zip file
-* Put the APK file in dataset/unfinished folder
+* Put the APK file in the dataset/unfinished folder
 * In the folder, run 
 ```sh
 python2 ./RunTest.py
 ```
+## APKs and suggested emulator info
+The APK file of the experiment data is in the test sequence folder
+Amaze	Pixel 3A, API34,x86_64, Android14.0
+Ankidroid	Pixel7pro, API31, x86_64, Android12.0
+AntennaPod	Pixel7pro, API28, x86, Android 9.0
+NewPipe	Pixel7pro, API28, x86, Android 9.0
+WordPress	Pixel7pro, API28, x86, Android 9.0
+SimpleNote	Pixel7pro, API28, x86, Android 9.0
+Firefox	Pixel7pro, API28, x86, Android 9.0
+All APIs we used: 21, 28, 30, 31, 33, 34, please adjust to the working API for each of the apps.
+Apps for real-world bugs: Android 4.4
+APKs for real-world bugs:https://drive.google.com/file/d/1qdw4eZjg4sr68serv0yuPvmeh66H4hfE/view?usp=sharing
+
