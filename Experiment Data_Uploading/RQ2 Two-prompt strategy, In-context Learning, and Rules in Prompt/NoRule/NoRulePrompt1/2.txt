@@ -1,0 +1,19 @@
+'Question the task' specifies the operations you need to do.
+'Output Format' identifies what format you need to use while providing output. 
+
+
+
+Question and Task:
+
+You will read an app flow, containing page text and actions to reach other pages.
+After that, please answer the question: Is there any inconsistency, a discrepancy, a logical error, or a bug in the given test sequence? 
+You needs to analyze the test sequence I provide and identify if there's any logical errors in the given sequence, then provide your decisions, same as what is shown in the 'example output decision' part you just read in in-context learning. 
+A logic error means the app didn’t provide the expected result after performing actions. 
+
+Output Format:
+
+Provide your answer with yes or no. 
+If your answer is yes, please also provide the reason. The reason should be brief and concise. 
+If you didn't detect any error, please answer 'No'. Finally, provide your final decision.
+
+Test Sequence:
